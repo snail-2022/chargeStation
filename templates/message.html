@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+</head>
+<body>
+    <h1>留言板</h1>
+    <div id="messages">
+        <!-- 留言显示区域 -->
+    </div>
+    <hr>
+    <h2>发表留言</h2>
+    <form id="messageForm" method="post">
+        <label for="username">用户名:</label>
+        <input type="text" id="username" name="username" value="{{ user.username }}" readonly><br><br>
+        <label for="content">内容:</label><br>
+        <textarea id="content" name="content" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">提交留言</button>
+    </form>
+
+    <script>
+        // 异步加载留言
+        function loadMessages() {
+            // 创建一个新的XMLHttpRequest对象
+            var xhr = new XMLHttpRequest();
+            // 初始化一个GET请求
+            xhr.open('GET', '/showMessages/', true);
+            // 当readyState属性发生变化时，onreadystatechange事件被触发
+            xhr.onreadystatechange = function() {
+                 // readyState为4表示请求已完成，status为200表示请求成功
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // 解析服务器返回的JSON数据
+                    var data = JSON.parse(xhr.responseText);
+                    var messagesDiv = document.getElementById('messages');
+                    messagesDiv.innerHTML = ''; // 清空留言区域
+                    data.messages.forEach(function(message) {
+                        var messageElement = document.createElement('div');
+                        messageElement.innerHTML = '<strong>' + message.username + '</strong>: ' + message.content + ' (' + message.timestamp + ')';
+                        messagesDiv.appendChild(messageElement);
+                    });
+                }
+            };
+            xhr.send();
+        }
+
+    // 提交留言
+        document.getElementById('messageForm').addEventListener('submit', function(event) {
+            // 阻止表单的默认提交行为
+            event.preventDefault();
+            // 创建一个新的FormData对象来收集表单数据
+            var formData = new FormData(this);
+            // 创建一个新的XMLHttpRequest对象
+            var xhr = new XMLHttpRequest();
+            // 初始化一个POST请求
+            xhr.open('POST', '/leaveMessage/', true);
+            // 设置请求头，表示这是一个AJAX请求
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            // 当readyState属性发生变化时，onreadystatechange事件被触发
+            xhr.onreadystatechange = function() {
+                // readyState为4表示请求已完成
+                if (xhr.readyState === 4) {
+                    // 如果请求成功
+                    if (xhr.status === 200) {
+                        // 解析服务器返回的JSON数据
+                        var data = JSON.parse(xhr.responseText);
+                        // 如果服务器返回的状态是 "success"
+                        if (data.status === 'success') {
+                            alert(data.message);
+                            loadMessages(); // 提交成功后刷新留言列表
+                            document.getElementById('content').value = ''; // 提交留言后清空留言板
+                        } else {
+                            alert(data.message);
+                        }
+                    } else {
+                        alert('提交留言时发生错误，请稍后重试。');
+                    }
+                }
+            };
+             // 发送请求，包含表单数据
+            xhr.send(formData);
+        });
+
+        // 页面加载完成后加载留言
+        window.onload = function() {
+            loadMessages();
+        };
+    </script>
+</body>
+</html>

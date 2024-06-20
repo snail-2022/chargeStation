@@ -1,0 +1,141 @@
+<!-- message_board.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>留言板</h1>
+    <div id="messages">
+        <!-- 留言显示区域 -->
+    </div>
+    <hr>
+    <h2>发表留言</h2>
+    <form id="messageForm" method="post">
+        #禁用CSRF{% csrf_token %}
+        <label for="username">用户名:</label>
+        <input type="text" id="username" name="username" value="{{ user.username }}" readonly><br><br>
+        <label for="content">内容:</label><br>
+        <textarea id="content" name="content" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">提交留言</button>
+    </form>
+
+    <script>
+        // 获取 CSRF 令牌
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        const csrftoken = getCookie('csrftoken');
+
+        // 异步加载留言
+        function loadMessages() {
+            fetch('/showMessages/')
+            .then(response => response.json())
+            .then(data => {
+                const messagesDiv = document.getElementById('messages');
+                messagesDiv.innerHTML = ''; // 清空留言区域
+                data.messages.forEach(message => {
+                    const messageElement = document.createElement('div');
+                    messageElement.innerHTML = `<strong>${message.username}</strong>: ${message.content} (${message.timestamp})`;
+                    messagesDiv.appendChild(messageElement);
+                });
+            });
+        }
+
+        // 提交留言
+        document.getElementById('messageForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // 阻止表单提交
+            const formData = new FormData(this);
+            fetch('/leaveMessage/', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'X-CSRFToken': csrftoken // 添加 CSRF 令牌
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    alert(data.message);
+                    loadMessages(); // 提交成功后刷新留言列表
+                    document.getElementById('content').value = '';//提交留言后清空留言板
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('提交留言时发生错误，请稍后重试。');
+            });
+        });
+
+        // 页面加载完成后加载留言
+        window.onload = function() {
+            loadMessages();
+        };
+
+
+    </script>
+</body>
+</html>

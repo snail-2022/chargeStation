@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>leaflet地图瓦片</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="{% static 'leaflet.css'%}">
+    <script src="{% static 'leaflet-src.js'%}"></script>
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+    //线上线下访问url不同，可变配置提出
+    var baseurl ='http://127.0.0.1:8000/';
+	var map = L.map('map').setView([34.216908,117.142829],15);
+	L.tileLayer('http://webrd01.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=1&scale=1&style=8', {
+		maxZoom: 24,
+	}).addTo(map);
+	/*var wmsOptions = {
+		layers: '123',
+		format: 'image/png',
+		transparent: true,
+		// 查询函数
+		//CQL_FILTER : "name='太阳宫'"
+	}
+	var wmsLayer = L.tileLayer.wms(baseurl + 'getwmts?', wmsOptions).addTo(map);*/
+
+
+		// 从后端获取数据
+
+	fetch(baseurl + 'get_point_data')
+    .then(response => response.json())
+    .then(data => {
+        // 遍历数据，为每个数据点创建一个红色的点
+        data.forEach(point => {
+            var lat = point.latitude;
+            var lng = point.longitude;
+            var redMarker = L.circleMarker([lat, lng], {
+                color: 'red',
+                fillColor: 'red',
+                fillOpacity: 1,
+                radius: 5,
+            }).addTo(map);
+        });
+    })
+    .catch(error => console.error('Error:', error));
+
+        // 获取缓冲区数据并展示
+        fetch(baseurl + 'create_buffer')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(station => {
+                    // 添加缓冲区多边形并设置样式
+                    var buffer = L.geoJSON(station.buffer_point, {
+                        style: {
+                            color: 'blue',       // 边界颜色
+                            fillColor: 'blue',   // 填充颜色
+                            fillOpacity: 0.5     // 填充透明度
+                        }
+                    }).addTo(map);
+
+
+                });
+            })
+            .catch(error => console.error('Error fetching buffer data:', error));
+
+</script>
+</body>
+</html>

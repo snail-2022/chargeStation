@@ -1,0 +1,1172 @@
+[
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u6c7d\u8f66\u5145\u7535\u7ad9(\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u70ae...",
+    "address": "\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u4e89\u5148\u8def\u56fd\u5bb6\u7535\u7f51\u90b3\u5dde\u70ae\u8f66\u4f9b\u7535\u8425\u4e1a\u5385",
+    "phone": "(0516)86282115",
+    "latitude": 34.324681,
+    "longitude": 118.050958,
+    "id": 21,
+    "location": "0101000020E61000000DDE57E542835D40F850A2258F294140"
+  },
+  {
+    "name": "\u7279\u6765\u7535\u6c7d\u8f66\u5145\u7535\u7ad9(\u4e2d\u56fd\u77f3\u5316\u6dee\u6d77\u52a0\u6cb9\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u5f90\u5dde\u4e07\u79d1(\u4fdd\u5229\u4e07\u79d1\u65f6\u4ee3\u4e4b\u5149)\u897f\u4fa7",
+    "phone": null,
+    "latitude": 34.340193,
+    "longitude": 117.252192,
+    "id": 22,
+    "location": "0101000020E61000000514EAE923505D4000AAB8718B2B4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u4e2d\u56fd\u77f3\u5316\u6768\u5c71\u8def\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u6768\u5c71\u8def62\u53f7",
+    "phone": null,
+    "latitude": 34.296634,
+    "longitude": 117.309537,
+    "id": 23,
+    "location": "0101000020E6100000BAF94674CF535D40DA70581AF8254140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u65b0\u6c82\u5b89\u901a\u9a7e\u9a76\u57f9\u8bad\u6709...",
+    "address": "\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u5317\u6c9f\u8857\u897f200\u7c73(\u65b0\u4e2d\u533b\u9662\u5bf9\u9762)\u65b0\u6c82\u5b89\u901a\u9a7e\u9a76\u57f9\u8bad\u6709\u9650\u516c\u53f8\u5185",
+    "phone": null,
+    "latitude": 34.360616,
+    "longitude": 118.404465,
+    "id": 24,
+    "location": "0101000020E61000001BD82AC1E2995D40093543AA282E4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u51a0\u5b87\u516c\u53f8)",
+    "address": "\u5f90\u5dde\u5e02\u9f13\u697c\u533a\u7ecf\u6d4e\u5f00\u53d1\u533a\u6768\u5c71\u8def15\u53f7\u51a0\u5b87\u516c\u53f8\u9662\u5185",
+    "phone": "(0516)83743857",
+    "latitude": 34.29413,
+    "longitude": 117.266972,
+    "id": 25,
+    "location": "0101000020E6100000A73CBA1116515D40E162450DA6254140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u8d3e\u6c6a\u533a\u6f58\u5b89\u6e56)",
+    "address": "\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u661f\u5149\u5927\u9053\u6f58\u5b89\u6e56\u98ce\u666f\u533aB\u533a\u505c\u8f66\u573a",
+    "phone": null,
+    "latitude": 34.363759,
+    "longitude": 117.369152,
+    "id": 26,
+    "location": "0101000020E610000031D0B52FA0575D401650A8A78F2E4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u4e2d\u56fd\u77f3\u5316\u7ad9)",
+    "address": "\u5f90\u5dde\u5e02\u6cc9\u5c71\u533a\u897f\u4e09\u73af\u8def\u878d\u521b\u6dee\u6d77\u58f9\u53f7\u5357\u4fa7\u7ea6130\u7c73",
+    "phone": "13815304917",
+    "latitude": 34.272781,
+    "longitude": 117.142591,
+    "id": 27,
+    "location": "0101000020E61000000D6D003620495D402FFCE07CEA224140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u7f8e\u4f73\u4e50\u5bb6\u5177\u5efa\u6750\u5e7f\u573a)",
+    "address": "\u5f90\u5dde\u5e02\u6c9b\u53bf\u6e29\u5dde\u5546\u8d38\u57ce\u5185\u6e29\u5dde\u5546\u8d38\u57ce(\u6c9b\u53bf\u5e97)",
+    "phone": null,
+    "latitude": 34.756648,
+    "longitude": 116.923942,
+    "id": 28,
+    "location": "0101000020E6100000A759A0DD213B5D40BA4A77D7D9604140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u8fd0\u6cb3\u8857\u9053\u6d77\u6cb3\u897f\u8def",
+    "phone": null,
+    "latitude": 34.352868,
+    "longitude": 117.977776,
+    "id": 29,
+    "location": "0101000020E610000014B4C9E1937E5D4008E753C72A2D4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u7fa4\u4f17\u6587\u5316\u6d3b\u52a8\u4e2d\u5fc3)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u5e9c\u4f51\u8def\u7fa4\u4f17\u6587\u5316\u6d3b\u52a8\u4e2d\u5fc3\u4e1c\u4fa7\u505c\u8f66\u573a",
+    "phone": "(0516)87611222",
+    "latitude": 34.443055,
+    "longitude": 117.469646,
+    "id": 30,
+    "location": "0101000020E61000009FAC18AE0E5E5D4026AAB706B6384140"
+  },
+  {
+    "name": "\u851a\u666f\u4e91\u5145\u7535\u7ad9(\u6d32\u6d32\u5145\u7535(\u4e30\u53bf\u6881\u5be8\u9547...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e30\u53bf\u6881\u5be8\u9547\u9e7f\u6881\u7ebf\u6881\u5be8\u9547\u4eba\u6c11\u653f\u5e9c",
+    "phone": null,
+    "latitude": 34.512676,
+    "longitude": 116.764995,
+    "id": 31,
+    "location": "0101000020E6100000A0A696ADF5305D40D8B8FE5D9F414140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u65b0\u626c\u9ad8\u901f\u8e22\u7403\u5c71\u670d\u52a1...",
+    "address": "\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u8e22\u7403\u5c71\u505c\u8f66\u533a",
+    "phone": null,
+    "latitude": 34.268306,
+    "longitude": 118.425115,
+    "id": 32,
+    "location": "0101000020E610000080828B15359B5D4009A9DBD957224140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u660e\u5fb7\u4e2d\u5b66)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u5efa\u8bbe\u5317\u8def2-2\u53f7\u660e\u5fb7\u4e2d\u5b66",
+    "phone": null,
+    "latitude": 34.336749,
+    "longitude": 117.98024,
+    "id": 33,
+    "location": "0101000020E6100000C98E8D40BC7E5D40F8FA5A971A2B4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u5f20\u5e84)",
+    "address": "\u5f90\u5dde\u5e02\u6c9b\u53bf\u6d77\u6cb3\u8def\u5f20\u5e84\u4f9b\u7535\u6240",
+    "phone": null,
+    "latitude": 34.526375,
+    "longitude": 117.025345,
+    "id": 34,
+    "location": "0101000020E61000007F87A2409F415D404C37894160434140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u7762\u5b81\u53bf...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u7762\u5b81\u53bf\u7ecf\u6d4e\u5f00\u53d1\u533a\u524d\u8fdb\u8def\u7efc\u5408\u80fd\u6e90\u4ea4\u6613\u4e2d\u5fc3\u697c\u524d",
+    "phone": "(0516)88012345,18251788638",
+    "latitude": 33.903495,
+    "longitude": 117.895725,
+    "id": 35,
+    "location": "0101000020E61000006A4DF38E53795D40BD8C62B9A5F34040"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535\u7ad9(\u98ce\u548c\u96c5\u5fd7\u505c\u8f66\u573a)",
+    "address": "\u5f90\u5dde\u5e02\u9f13\u697c\u533a\u7965\u548c\u8def\u548c\u98ce\u96c5\u81f4\u5c0f\u533a",
+    "phone": "4008280768",
+    "latitude": 34.298533,
+    "longitude": 117.200208,
+    "id": 36,
+    "location": "0101000020E610000072193735D04C5D406DE34F5436264140"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535\u7ad9(\u65b0\u57ce\u5e02\u6c11\u5e7f\u573a\u5546\u4e1a\u7ba1\u7406\u6709...",
+    "address": "\u65b0\u5b89\u8def\u4e0e\u6c49\u98ce\u8def\u4ea4\u53c9\u53e3",
+    "phone": "4008280768",
+    "latitude": 34.208472,
+    "longitude": 117.291077,
+    "id": 37,
+    "location": "0101000020E61000008AE76C01A1525D40DC10E335AF1A4140"
+  },
+  {
+    "name": "\u5145\u7535\u5570\u4e91\u521b\u516c\u9986\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u7eff\u5730\u4e91\u521b\u516c\u9986\u5730\u9762\u505c\u8f66\u573a(\u7ad9\u897f\u9ad8\u67b6\u8def\u4e0e\u7ad9\u5357\u8def\u4ea4\u53c9\u53e3\u5357)",
+    "phone": null,
+    "latitude": 34.269138,
+    "longitude": 117.310531,
+    "id": 38,
+    "location": "0101000020E61000003A596ABDDF535D40300E2E1D73224140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u9752\u5c71\u6cc9\u4f9b\u7535\u6240\u8425\u4e1a\u5385)",
+    "address": "\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u9752\u5c71\u6cc9\u6f14\u9a6c\u8def20\u53f7",
+    "phone": null,
+    "latitude": 34.418136,
+    "longitude": 117.387081,
+    "id": 39,
+    "location": "0101000020E6100000CAF962EFC5585D40DFA3FE7A85354140"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535\u7ad9(\u683c\u6797\u8c6a\u6cf0\u9152\u5e97)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u9f13\u697c\u533a\u683c\u6797\u8c6a\u6cf0\u9152\u5e97\u7ea2\u661f\u7f8e\u51ef\u9f99\u5e97\u590d\u5174\u5317\u8def199\u53f7\u5730\u9762\u505c\u8f66\u573a7",
+    "phone": "4008280768",
+    "latitude": 34.301427,
+    "longitude": 117.217071,
+    "id": 40,
+    "location": "0101000020E61000003E7AC37DE44D5D40D190F12895264140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u53e4\u9ec4\u6cb3\u670d\u52a1\u533a\u6dee\u5b89\u65b9\u5411)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u6dee\u5f90\u9ad8\u901f\u5f90\u5dde\u53e4\u9ec4\u6cb3\u670d\u52a1\u533a(\u6dee\u5b89\u65b9\u5411)",
+    "phone": null,
+    "latitude": 34.131976,
+    "longitude": 117.425557,
+    "id": 41,
+    "location": "0101000020E61000005E656D533C5B5D40AFEDED96E4104140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(322\u7701\u9053)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bf322\u7701\u9053\u5317\u4fa7",
+    "phone": null,
+    "latitude": 34.49143,
+    "longitude": 116.934788,
+    "id": 42,
+    "location": "0101000020E61000005E2C0C91D33B5D40FB22A12DE73E4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u656c\u5b89\u670d\u52a1\u533a\u6d4e\u5357\u65b9\u5411)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u5f90\u6d4e\u9ad8\u901f\u656c\u5b89\u670d\u52a1\u533a\u4e1c\u533a(\u6d4e\u5357\u65b9\u5411)",
+    "phone": null,
+    "latitude": 34.539964,
+    "longitude": 116.961416,
+    "id": 43,
+    "location": "0101000020E61000007976F9D6873D5D403882548A1D454140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u65b0\u6c82\u5e02\u4eba\u6c11\u8def\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u65b0\u5b89\u8857\u9053\u4eba\u6c11\u8def102\u53f7",
+    "phone": null,
+    "latitude": 34.351991,
+    "longitude": 118.334422,
+    "id": 44,
+    "location": "0101000020E61000000744882B67955D4040BE840A0E2D4140"
+  },
+  {
+    "name": "\u77f3\u5316\u6613\u7535\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u5929\u5c71\u8def\u4e2d\u56fd\u77f3\u5316\u5f90\u5dde\u90b3\u5dde\u4e16\u7eaa\u5927\u9053\u52a0\u6cb9\u7ad9",
+    "phone": null,
+    "latitude": 34.336212,
+    "longitude": 117.950533,
+    "id": 45,
+    "location": "0101000020E610000033315D88D57C5D40EA42ACFE082B4140"
+  },
+  {
+    "name": "\u805a\u80fd\u5145\u5145\u7535\u7ad9(\u53cc\u5854\u8def\u5145\u7535\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533aS252",
+    "phone": null,
+    "latitude": 34.109194,
+    "longitude": 117.608944,
+    "id": 46,
+    "location": "0101000020E61000001B4641F0F8665D40B075A911FA0D4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u53e4\u9ec4\u6cb3\u670d\u52a1\u533a\u5f90\u5dde\u65b9\u5411)",
+    "address": "\u6c5f\u82cf\u7701\u94dc\u5c71\u533a\u6dee\u5f90\u9ad8\u901f\u5f90\u5dde\u53e4\u9ec4\u6cb3\u670d\u52a1\u533a\u5f90\u5dde\u65b9\u5411",
+    "phone": "17805040559",
+    "latitude": 34.13273,
+    "longitude": 117.42554,
+    "id": 47,
+    "location": "0101000020E6100000F3C81F0C3C5B5D405B99F04BFD104140"
+  },
+  {
+    "name": "\u7279\u6765\u7535\u5145\u7535\u7ad9(\u949f\u543e\u516c\u56ed\u505c\u8f66\u573a)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u4e34\u6cad\u4e2d\u8def\u949f\u543e\u516c\u56ed",
+    "phone": "(0516)88979023",
+    "latitude": 34.380436,
+    "longitude": 118.364043,
+    "id": 48,
+    "location": "0101000020E61000009DD5027B4C975D404C1C7920B2304140"
+  },
+  {
+    "name": "\u4e91\u5feb\u5145\u5145\u7535\u7ad9(\u82cf\u901a\u5feb\u7535\u65b0\u6c82\u5e02\u949f\u543e\u8857...",
+    "address": "\u65b0\u5317\u8def106\u53f7\u949f\u543e\u8857\u9053\u9662\u5185",
+    "phone": null,
+    "latitude": 34.392604,
+    "longitude": 118.345946,
+    "id": 49,
+    "location": "0101000020E6100000A60BB1FA23965D40AF230ED940324140"
+  },
+  {
+    "name": "\u6c7d\u8f66\u5145\u7535",
+    "address": "\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u65b0\u90b5\u7ebf\u65b0\u5e97\u4e2d\u5b66\u4e1c\u5317\u4fa7\u7ea6100\u7c73",
+    "phone": null,
+    "latitude": 34.145819,
+    "longitude": 118.29773,
+    "id": 50,
+    "location": "0101000020E6100000704221020E935D4056116E32AA124140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u9a6c\u5761\u9547...",
+    "address": "\u5f90\u5dde\u5e02\u94dc\u5c71\u533aY220",
+    "phone": null,
+    "latitude": 34.543602,
+    "longitude": 117.123336,
+    "id": 51,
+    "location": "0101000020E6100000D89AADBCE4475D40250516C094454140"
+  },
+  {
+    "name": "\u5f90\u5dde\u5357\u6e56\u6c34\u8857\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u5f90\u5dde\u5e02\u6cc9\u5c71\u533a\u6e56\u5357\u8def\u51ef\u83b1\u5ea6\u5047\u9152\u5e97",
+    "phone": null,
+    "latitude": 34.236157,
+    "longitude": 117.16333,
+    "id": 52,
+    "location": "0101000020E61000002A1DACFF734A5D4059DC7F643A1E4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(Y203(\u6c5f\u5927\u8def))",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533aY203(\u6c5f\u5927\u8def)\u8f66\u7ad9\u70df\u9152\u8d85\u5e02(203\u4e61\u9053)\u897f\u5317115\u7c73",
+    "phone": null,
+    "latitude": 34.493965,
+    "longitude": 117.444261,
+    "id": 53,
+    "location": "0101000020E6100000D978B0C56E5C5D40302FC03E3A3F4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u4eac\u53f0\u9ad8\u901f\u9752\u5c71\u6cc9\u670d\u52a1...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u8fde\u5f90\u9ad8\u5ea6\u516c\u8def\u6709\u9650\u516c\u53f8\u9752\u5c71\u6cc9\u670d\u52a1\u533a",
+    "phone": null,
+    "latitude": 34.404021,
+    "longitude": 117.339542,
+    "id": 54,
+    "location": "0101000020E610000094675E0EBB555D40D8F2CAF5B6334140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u7762\u5b81\u53bf\u9999\u683c\u91cc\u62c9)",
+    "address": "\u5f90\u5dde\u5e02\u7762\u5b81\u53bf104\u56fd\u9053(\u6613\u5361\u7535\u5b50\u5546\u52a1\u6709\u9650\u516c\u53f8)",
+    "phone": "18251788638",
+    "latitude": 33.904811,
+    "longitude": 117.899815,
+    "id": 55,
+    "location": "0101000020E6100000D15CA79196795D40D107CBD8D0F34040"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u6d4e\u5f90\u9ad8\u901f\u656c\u5b89\u670d\u52a1\u533a...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bf\u656c\u5b89\u670d\u52a1\u533a(\u5f90\u5dde\u65b9\u5411)",
+    "phone": null,
+    "latitude": 34.540735,
+    "longitude": 116.959543,
+    "id": 56,
+    "location": "0101000020E6100000C4060B27693D5D40BA66F2CD36454140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u65b0\u6c82\u5e02\u65e0\u9521\u5de5\u4e1a\u56ed)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u5de5\u4e1a\u56ed\u533a\u56fd\u4fe1\u73af\u7ebf",
+    "phone": null,
+    "latitude": 34.352782,
+    "longitude": 118.382857,
+    "id": 57,
+    "location": "0101000020E6100000DC82A5BA80985D40094FE8F5272D4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u5f90\u5dde\u7762\u5b81\u53cc\u6c9fG104\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u7762\u5b81\u53bfG104(\u4eac\u5c9a\u7ebf)\u89c2\u97f3\u673a\u573a\u897f\u5357\u4fa7",
+    "phone": null,
+    "latitude": 34.057635,
+    "longitude": 117.541111,
+    "id": 58,
+    "location": "0101000020E610000060200890A1625D406F0D6C9560074140"
+  },
+  {
+    "name": "\u5bc4\u8f66\u5145\u7535",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02S251\u571f\u5c71\u8f66\u7ad9",
+    "phone": null,
+    "latitude": 34.228007,
+    "longitude": 117.858825,
+    "id": 59,
+    "location": "0101000020E61000002EFF21FDF6765D40292158552F1D4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bfS322",
+    "phone": "13852130178",
+    "latitude": 34.498853,
+    "longitude": 116.923907,
+    "id": 60,
+    "location": "0101000020E6100000E962D34A213B5D407841446ADA3F4140"
+  },
+  {
+    "name": "\u9a74\u5145\u5145\u65b0\u80fd\u6e90\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533aG310(\u8fde\u5171\u7ebf)",
+    "phone": null,
+    "latitude": 34.375479,
+    "longitude": 117.278004,
+    "id": 61,
+    "location": "0101000020E61000000F0A4AD1CA515D40DAAA24B20F304140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u73af\u9547\u4e1c\u8def\u5317\u5927\u4eb2\u5b50\u4e1c\u5317\u4fa7\u7ea670\u7c73",
+    "phone": null,
+    "latitude": 34.440526,
+    "longitude": 117.05742,
+    "id": 62,
+    "location": "0101000020E6100000B988EFC4AC435D40D384ED2763384140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u4eba\u6c11\u4e2d\u8def)",
+    "address": "\u5f90\u5dde\u5e02\u7762\u5b81\u53bf\u4eba\u6c11\u4e2d\u8def\u7ea2\u53f6\u5c0f\u533a",
+    "phone": null,
+    "latitude": 33.914312,
+    "longitude": 117.948566,
+    "id": 63,
+    "location": "0101000020E61000003E062B4EB57C5D40912BF52C08F54040"
+  },
+  {
+    "name": "\u77f3\u5316\u6613\u7535(\u4e2d\u56fd\u77f3\u5316\u90b3\u5dde\u4e16\u7eaa\u5927\u9053\u5145\u7535\u7ad9)",
+    "address": "\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u5929\u5c71\u8def\u90b3\u5dde\u7ed3\u77f3\u533b\u9662\u5317\u4fa7\u7ea6240\u7c73",
+    "phone": null,
+    "latitude": 34.336339,
+    "longitude": 117.950599,
+    "id": 64,
+    "location": "0101000020E61000000F27309DD67C5D4047AF06280D2B4140"
+  },
+  {
+    "name": "\u7279\u6765\u7535\u5145\u7535\u7ad9(\u65b0\u6c82\u58a8\u6cb3\u76ae\u8349\u7535\u5546\u56ed)",
+    "address": "\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u5f90\u6d77\u897f\u8def\u65b0\u6c82\u5e02\u58a8\u6cb3\u5c0f\u5b66\u897f\u5317\u4fa7\u7ea6190\u7c73",
+    "phone": null,
+    "latitude": 34.384468,
+    "longitude": 118.310966,
+    "id": 65,
+    "location": "0101000020E6100000BF0AF0DDE6935D40E42D573F36314140"
+  },
+  {
+    "name": "\u542f\u6e90\u82af\u52a8\u529b\u5145\u7535\u7ad9(\u65b0\u6c82\u4e1cG311\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02",
+    "phone": null,
+    "latitude": 34.364411,
+    "longitude": 118.491151,
+    "id": 66,
+    "location": "0101000020E610000074999A046F9F5D40BDA60705A52E4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u8fde\u970d\u9ad8\u901f\u6e2f\u5934\u670d\u52a1\u533a...",
+    "address": "\u65b0\u6c82\u5e02\u6e2f\u5934\u9547\u8fde\u970d\u9ad8\u901f\u6e2f\u5934\u670d\u52a1\u533a(\u970d\u5c14\u679c\u65af\u65b9\u5411)",
+    "phone": null,
+    "latitude": 34.33753,
+    "longitude": 118.220271,
+    "id": 67,
+    "location": "0101000020E6100000765089EB188E5D409EB5DB2E342B4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u7eff\u73af\u8def)",
+    "address": "\u5f90\u5dde\u5e02\u6cc9\u5c71\u533a\u7eff\u73af\u8def\u5f90\u5dde\u6c7d\u8f66\u5ba2\u8fd0\u5357\u7ad9",
+    "phone": null,
+    "latitude": 34.230775,
+    "longitude": 117.2294,
+    "id": 68,
+    "location": "0101000020E6100000F46C567DAE4E5D4001DE02098A1D4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(S249\u8f85\u8def)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02S249\u8f85\u8def\u57ce\u6295\u7f6e\u4e1a\u5927\u53a6\u5317164\u7c73",
+    "phone": null,
+    "latitude": 34.351204,
+    "longitude": 118.357185,
+    "id": 69,
+    "location": "0101000020E6100000CB67791EDC965D40B91CAF40F42C4140"
+  },
+  {
+    "name": "\u6c7d\u8f66\u5145\u7535\u7ad9(\u9a74\u5145\u5145\u91d1\u96c5\u5c45\u6728\u95e8\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u7762\u5b81\u53bf\u6b66\u660c\u8def\u91d1\u96c5\u5c45\u6728\u95e8(\u674e\u96c6\u5e97)\u9644\u8fd12\u7c73",
+    "phone": null,
+    "latitude": 33.777282,
+    "longitude": 117.802749,
+    "id": 70,
+    "location": "0101000020E61000006479573D60735D407EE200FA7DE34040"
+  },
+  {
+    "name": "\u6b63\u91d1\u5bbe\u9986\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u5f90\u5dde\u5e02\u4e91\u9f99\u533a\u90ed\u5e84\u8def\u5eb7\u99a8\u56edB\u533a\u897f\u5317\u4fa7",
+    "phone": null,
+    "latitude": 34.247135,
+    "longitude": 117.245711,
+    "id": 71,
+    "location": "0101000020E61000001E51A1BAB94F5D403659A31EA21F4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u6dee\u5f90\u9ad8\u901f\u9ad8\u4f5c\u670d\u52a1\u533a...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u9ad8\u4f5c\u670d\u52a1\u533a",
+    "phone": null,
+    "latitude": 33.9388,
+    "longitude": 118.043298,
+    "id": 72,
+    "location": "0101000020E6100000DC7EF964C5825D400EBE30992AF84040"
+  },
+  {
+    "name": "\u851a\u6765\u6362\u7535\u7ad9\u5f90\u5dde\u91d1\u5c71\u6865(\u4e09\u73af\u4e1c\u8def)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u9f13\u697c\u533a\u4e09\u73af\u4e1c\u8def31\u53f7",
+    "phone": null,
+    "latitude": 34.287754,
+    "longitude": 117.242116,
+    "id": 73,
+    "location": "0101000020E6100000A7751BD47E4F5D4087A5811FD5244140"
+  },
+  {
+    "name": "\u9a74\u5145\u5145\u65b0\u80fd\u6e90\u6c7d\u8f66\u5145\u7535\u7ad9(\u8349\u5e99\u65b0\u6751\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bf\u76ca\u519c\u4fe1\u7528\u793e\u897f\u5357\u4fa7\u7ea640\u7c73",
+    "phone": "4009155388",
+    "latitude": 34.685627,
+    "longitude": 116.983832,
+    "id": 74,
+    "location": "0101000020E610000088307E1AF73E5D40962023A0C2574140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u7763...",
+    "address": "\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u8d3e\u6c74\u8def\u7763\u516c\u6e56\u666f\u533a",
+    "phone": null,
+    "latitude": 34.445091,
+    "longitude": 117.558661,
+    "id": 75,
+    "location": "0101000020E61000003E23111AC1635D40395FECBDF8384140"
+  },
+  {
+    "name": "\u851a\u6765\u6362\u7535\u7ad9(\u5f90\u5dde\u8fde\u5f90\u9ad8\u901f\u5e7f\u573a\u5347\u8f89\u5357\u5df7)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e91\u9f99\u533a\u4e1c\u4e09\u73af\u8def68\u53f7",
+    "phone": null,
+    "latitude": 34.255338,
+    "longitude": 117.234827,
+    "id": 76,
+    "location": "0101000020E6100000F04DD367074F5D4089B663EAAE204140"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535\u5145\u7535\u7ad9(\u5f90\u5dde\u5e02\u5e02\u653f\u5e9c\u5de5\u4f5c\u5730)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e91\u9f99\u533a\u5927\u9f99\u6e56\u8857\u9053\u6606\u4ed1\u5927\u90531\u53f7\u5f90\u5dde\u5e02\u4eba\u6c11\u653f\u5e9c",
+    "phone": null,
+    "latitude": 34.21227,
+    "longitude": 117.293049,
+    "id": 77,
+    "location": "0101000020E610000008C89750C1525D4001F6D1A92B1B4140"
+  },
+  {
+    "name": "\u4e91\u5feb\u5145\u5145\u7535\u7ad9(\u56fd\u9053311\u78be\u5e84\u4e1c\u5145\u7535\u7ad9)",
+    "address": "\u78be\u5e84\u9547\u8fdc\u4e0a\u7ea2\u7eff\u706f\u5411\u4e1c150\u7c73\u8def\u5317\u4fa7\u65fa\u5e84\u7ec4260\u53f7",
+    "phone": null,
+    "latitude": 34.308729,
+    "longitude": 117.813732,
+    "id": 78,
+    "location": "0101000020E61000005BED612F14745D40D4298F6E84274140"
+  },
+  {
+    "name": "\u9a74\u5145\u5145\u5145\u7535\u7ad9(\u6885\u5e84\u9762\u7c89\u5382\u4e1c\u5357)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533aG310(\u8fde\u5171\u7ebf)\u6885\u5e84\u9762\u7c89\u5382\u4e1c\u5357106\u7c73",
+    "phone": null,
+    "latitude": 34.375486,
+    "longitude": 117.278004,
+    "id": 81,
+    "location": "0101000020E61000000F0A4AD1CA515D408D0DDDEC0F304140"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535\u5145\u7535\u7ad9(\u5f90\u5dde\u5e02\u5e02\u653f\u5e9c\u5de5\u4f5c\u5730)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e91\u9f99\u533a\u5927\u9f99\u6e56\u8857\u9053\u6606\u4ed1\u5927\u90531\u53f7\u5f90\u5dde\u5e02\u4eba\u6c11\u653f\u5e9c",
+    "phone": null,
+    "latitude": 34.212262,
+    "longitude": 117.293034,
+    "id": 82,
+    "location": "0101000020E61000006EA7AD11C1525D407F17B6662B1B4140"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535\u5145\u7535\u7ad9(\u5f90\u5dde\u5e02\u5e02\u653f\u5e9c\u5de5\u4f5c\u5730)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e91\u9f99\u533a\u5927\u9f99\u6e56\u8857\u9053\u6606\u4ed1\u5927\u90531\u53f7\u5f90\u5dde\u5e02\u4eba\u6c11\u653f\u5e9c",
+    "phone": null,
+    "latitude": 34.212272,
+    "longitude": 117.293058,
+    "id": 83,
+    "location": "0101000020E610000032755776C1525D40A2ED98BA2B1B4140"
+  },
+  {
+    "name": "\u4e2d\u56fd\u77f3\u5316(\u5f90\u5dde\u534e\u5347\u52a0\u6cb9\u7ad9)-\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e91\u9f99\u533a\u8fce\u5bbe\u5927\u9053\u4e2d\u56fd\u77f3\u5316\u5f90\u5dde\u534e\u5347\u52a0\u6cb9\u7ad9",
+    "phone": null,
+    "latitude": 34.183545,
+    "longitude": 117.279643,
+    "id": 84,
+    "location": "0101000020E61000008AE3C0ABE5515D40132C0E677E174140"
+  },
+  {
+    "name": "\u6dee\u897f\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6cc9\u5c71\u533a\u6e56\u6ee8\u8857\u9053\u6dee\u6d77\u897f\u8def240\u53f7\u5f90\u5dde\u6c7d\u8f66\u5ba2\u8fd0\u897f\u7ad9",
+    "phone": null,
+    "latitude": 34.262052,
+    "longitude": 117.145466,
+    "id": 85,
+    "location": "0101000020E6100000842BA0504F495D40FAEC80EB8A214140"
+  },
+  {
+    "name": "\u851a\u6765\u6362\u7535\u7ad9(\u5f90\u5dde\u4e2d\u77f3\u5316\u8fd0\u901a\u7ad9)",
+    "address": "\u5f90\u5dde\u5e02\u6cc9\u5c71\u533a\u897f\u4e09\u73af\u8def\u878d\u521b\u6dee\u6d77\u58f9\u53f7\u5357\u4fa7\u7ea6140\u7c73",
+    "phone": null,
+    "latitude": 34.272757,
+    "longitude": 117.142551,
+    "id": 86,
+    "location": "0101000020E6100000C6C03A8E1F495D40A6608DB3E9224140"
+  },
+  {
+    "name": "\u7279\u6765\u7535\u5145\u7535\u7ad9(\u7279\u6765\u7535\u7ad9\u5f90\u5dde\u96e8\u6da6\u6c34\u679c...",
+    "address": "\u5f90\u5dde\u5e02\u6cc9\u5c71\u533aG311\u96e8\u6da6\u6c34\u679c\u5e02\u573a\u4e8c\u5c42\u897f\u533a",
+    "phone": null,
+    "latitude": 34.271234,
+    "longitude": 117.111906,
+    "id": 87,
+    "location": "0101000020E61000007A8EC87729475D4019C8B3CBB7224140"
+  },
+  {
+    "name": "\u7279\u65af\u62c9\u8d85\u7ea7\u5145\u7535\u7ad9(\u58f9\u65b9\u57ce\u8d2d\u7269\u4e2d\u5fc3\u5e97)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u5927\u5b66\u8def219\u53f7\u58f9\u65b9\u57ce\u8d2d\u7269\u4e2d\u5fc3\u5730\u4e0b\u505c\u8f66\u573a\u8d1f\u4e00\u5c42",
+    "phone": "4009100707",
+    "latitude": 34.210686,
+    "longitude": 117.148188,
+    "id": 88,
+    "location": "0101000020E6100000386A85E97B495D40CFDC43C2F71A4140"
+  },
+  {
+    "name": "98\u65b0\u80fd\u6e90\u6c7d\u8f66\u5feb\u901f\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533aX303(\u67f3\u9752\u7ebf)",
+    "phone": null,
+    "latitude": 34.44944,
+    "longitude": 117.308076,
+    "id": 90,
+    "location": "0101000020E6100000AE2B6684B7535D40D3C1FA3F87394140"
+  },
+  {
+    "name": "\u667a\u80fd\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bfG518",
+    "phone": "18036362166",
+    "latitude": 34.718108,
+    "longitude": 116.729621,
+    "id": 91,
+    "location": "0101000020E6100000635E471CB22E5D407C7F83F6EA5B4140"
+  },
+  {
+    "name": "\u5145\u7535\u7ad9\u6c9b\u53bf1978\u5c0f\u8fab\u5b50\u7f8e\u98df\u6c47\u5494\u5494\u7535\u59c6\u7ad9",
+    "address": "\u5f90\u5dde\u5e02\u6c9b\u53bf\u6c49\u6da6\u8def",
+    "phone": null,
+    "latitude": 34.745894,
+    "longitude": 116.90701,
+    "id": 92,
+    "location": "0101000020E610000047C9AB730C3A5D402D246074795F4140"
+  },
+  {
+    "name": "\u851a\u6765\u6362\u7535\u7ad9",
+    "address": "\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u8fde\u970d\u9ad8\u901f\u90b5\u697c\u670d\u52a1\u533a",
+    "phone": null,
+    "latitude": 34.224898,
+    "longitude": 117.52106,
+    "id": 93,
+    "location": "0101000020E61000003ED00A0C59615D40C9772975C91C4140"
+  },
+  {
+    "name": "\u65b0\u6807\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02G205(\u5c71\u6df1\u7ebf)",
+    "phone": "13852076738",
+    "latitude": 34.305818,
+    "longitude": 118.576854,
+    "id": 94,
+    "location": "0101000020E610000046240A2DEBA45D409A43520B25274140"
+  },
+  {
+    "name": "\u4e91\u5feb\u5145\u5145\u7535\u7ad9(\u82cf\u901a\u5feb\u7535\u5927\u8bb8\u9ebb\u6c9f\u6751\u59d4...",
+    "address": "\u5927\u8bb8\u9547G311\u9ebb\u6c9f\u6751\u6c11\u59d4\u5458\u4f1a\u95e8\u524d",
+    "phone": null,
+    "latitude": 34.303838,
+    "longitude": 117.541771,
+    "id": 95,
+    "location": "0101000020E6100000F5BA4560AC625D401AA4E029E4264140"
+  },
+  {
+    "name": "\u4e09\u8c46\u5145\u7535\u6869",
+    "address": "\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u68e0\u9a6c\u8def\u4e2d\u56fd\u77f3\u5316\u52a0\u6cb9\u7ad9(\u68e0\u5f20\u7ad9)\u5317\u4fa7\u7ea650\u7c73",
+    "phone": null,
+    "latitude": 34.157608,
+    "longitude": 117.267752,
+    "id": 96,
+    "location": "0101000020E610000012DC48D922515D4043CBBA7F2C144140"
+  },
+  {
+    "name": "\u592a\u884c\u5bb6\u5c45\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e30\u53bfG518",
+    "phone": null,
+    "latitude": 34.733601,
+    "longitude": 116.507392,
+    "id": 97,
+    "location": "0101000020E610000021904B1C79205D400DA837A3E65D4140"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533aG206(\u5f90\u6d77\u8def)",
+    "phone": "4008280768",
+    "latitude": 34.284227,
+    "longitude": 117.323101,
+    "id": 98,
+    "location": "0101000020E61000008313D1AFAD545D40F2D1E28C61244140"
+  },
+  {
+    "name": "\u7ef4\u4e5f\u7eb3\u56fd\u9645\u9152\u5e97\u65b0\u80fd\u6e90\u5145\u7535\u6869(\u6c9b\u53bf\u6c9b...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bf\u7ecf\u6d4e\u5f00\u53d1\u533a\u6c9b\u516c\u8def\u79d1\u6280\u521b\u4e1a\u56edC1\u680b",
+    "phone": null,
+    "latitude": 34.764768,
+    "longitude": 116.90958,
+    "id": 99,
+    "location": "0101000020E61000002046088F363A5D407F83F6EAE3614140"
+  },
+  {
+    "name": "\u4e91\u5feb\u5145\u5145\u7535\u7ad9(\u82cf\u901a\u5feb\u7535\u98ce\u91c7\u827a\u6821\u95e8\u524d...",
+    "address": "\u623f\u6751\u9547\u4e54\u5bb6\u5927\u9662\u996d\u5e84\u4e1c20\u7c73",
+    "phone": null,
+    "latitude": 34.091285,
+    "longitude": 117.485052,
+    "id": 100,
+    "location": "0101000020E610000000378B170B5F5D40C4CE143AAF0B4140"
+  },
+  {
+    "name": "\u738b\u6c9f\u9547\u4e2d\u5fc3\u5c0f\u5b66\u5145\u7535\u7ad9",
+    "address": "\u738b\u6c9f\u9547\u4e2d\u5fc3\u5c0f\u5b66(\u51e4\u738b\u7ebf\u5357)",
+    "phone": null,
+    "latitude": 34.676279,
+    "longitude": 116.50178,
+    "id": 101,
+    "location": "0101000020E61000005C72DC291D205D405DFC6D4F90564140"
+  },
+  {
+    "name": "\u5f18\u90a6\u519c\u7267\u79d1\u6280\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u5927\u5e99\u8857\u9053X203(\u5927\u5f20\u7ebf)",
+    "phone": null,
+    "latitude": 34.253874,
+    "longitude": 117.390994,
+    "id": 102,
+    "location": "0101000020E6100000AABBB20B06595D4001A777F17E204140"
+  },
+  {
+    "name": "\u5bc4\u8f66\u5145\u7535",
+    "address": "\u5f90\u5dde\u5e02\u4e30\u53bf\u6c38\u5b89\u8def\u82cf\u9c81\u8fb9\u8d38\u57ce",
+    "phone": null,
+    "latitude": 34.873401,
+    "longitude": 116.66985,
+    "id": 103,
+    "location": "0101000020E610000070CE88D2DE2A5D4098A59D9ACB6F4140"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535(\u9752\u5c71\u6cc9\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u8f6c\u578b\u5927\u9053",
+    "phone": null,
+    "latitude": 34.427567,
+    "longitude": 117.374626,
+    "id": 104,
+    "location": "0101000020E6100000CE8E54DFF9575D40A7ECF483BA364140"
+  },
+  {
+    "name": "\u9a74\u5145\u5145\u5145\u7535\u7ad9(\u6885\u5e84\u9762\u7c89\u5382\u4e1c\u5357)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533aG310(\u8fde\u5171\u7ebf)\u6885\u5e84\u9762\u7c89\u5382\u4e1c\u5357106\u7c73",
+    "phone": null,
+    "latitude": 34.375491,
+    "longitude": 117.278006,
+    "id": 105,
+    "location": "0101000020E6100000E085ADD9CA515D409E78CE1610304140"
+  },
+  {
+    "name": "\u9a74\u5145\u5145\u5145\u7535\u7ad9(\u6885\u5e84\u9762\u7c89\u5382\u4e1c\u5357)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533aG310(\u8fde\u5171\u7ebf)\u6885\u5e84\u9762\u7c89\u5382\u4e1c\u5357106\u7c73",
+    "phone": null,
+    "latitude": 34.375476,
+    "longitude": 117.278001,
+    "id": 106,
+    "location": "0101000020E610000057D0B4C4CA515D406937FA980F304140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u6869",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02G311(\u8d85\u65f6\u5927\u9053)",
+    "phone": null,
+    "latitude": 34.308875,
+    "longitude": 117.81371,
+    "id": 107,
+    "location": "0101000020E6100000679B1BD313745D40A8C64B3789274140"
+  },
+  {
+    "name": "\u5145\u7535",
+    "address": "\u5f90\u5dde\u5e02\u94dc\u5c71\u533aS322\u534e\u7f8e\u548c\u56ed(\u5317\u533a)\u897f\u5317\u4fa7",
+    "phone": null,
+    "latitude": 34.349124,
+    "longitude": 117.119552,
+    "id": 108,
+    "location": "0101000020E6100000F88A6EBDA6475D40D61F6118B02C4140"
+  },
+  {
+    "name": "\u7279\u6765\u7535\u5145\u7535\u7ad9(\u5f90\u5dde\u541b\u5ef7\u6e56\u7554\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u73af\u7403\u6e2f\u6c49\u5ead\u9152\u5e97\u95e8\u53e3\u505c\u8f66\u573a",
+    "phone": null,
+    "latitude": 34.273302,
+    "longitude": 117.27895,
+    "id": 109,
+    "location": "0101000020E610000007CE1951DA515D4038F7578FFB224140"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535\u7ad9(\u5f90\u5dde\u5fb7\u9686\u5927\u9152\u5e97)",
+    "address": "\u5f90\u5dde\u5e02\u9f13\u697c\u533a\u590d\u5174\u5317\u8def217\u53f7",
+    "phone": "4008280768",
+    "latitude": 34.293187,
+    "longitude": 117.212955,
+    "id": 110,
+    "location": "0101000020E61000004221020EA14D5D40624ED02687254140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u6c9b\u57ce\u9547)",
+    "address": "\u5f90\u5dde\u5e02\u6c9b\u53bf\u6c9b\u57ce\u9547\u5f90\u6c9b\u8def\u4f9b\u7535\u6240",
+    "phone": "(0516)89657295,13921792299",
+    "latitude": 34.712565,
+    "longitude": 116.956919,
+    "id": 1,
+    "location": "0101000020E6100000F27A30293E3D5D401AA37554355B4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u5145\u7535\u7ad9(\u62fe\u5c6f\u4f9b\u7535\u6240)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u9f13\u697c\u533a\u8944\u738b\u5317\u8def\u4e0e\u9f9f\u5c71\u5357\u8def\u4ea4\u53c9\u53e3",
+    "phone": null,
+    "latitude": 34.310961,
+    "longitude": 117.141087,
+    "id": 2,
+    "location": "0101000020E610000002B9C49107495D406DAAEE91CD274140"
+  },
+  {
+    "name": "\u4e91\u5feb\u5145\u5145\u7535\u7ad9(\u82cf\u901a\u5feb\u7535\u68e0\u5f20\u6d3e\u51fa\u6240\u5927...",
+    "address": "\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u5e9c\u524d\u8def\u94dc\u5c71\u533a\u516c\u5b89\u5c40\u68e0\u5f20\u6d3e\u51fa\u6240",
+    "phone": null,
+    "latitude": 34.1548,
+    "longitude": 117.269811,
+    "id": 3,
+    "location": "0101000020E610000078465B9544515D40DDB5847CD0134140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u98de\u8679\u52a0\u6cb9\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bf\u91d1\u5730\u5bb6\u56ed5-47\u4e1c\u5357\u65b9\u541190\u7c73\u98de\u8679\u52a0\u6cb9\u7ad9",
+    "phone": null,
+    "latitude": 34.726247,
+    "longitude": 116.960902,
+    "id": 4,
+    "location": "0101000020E61000004E2A1A6B7F3D5D40B8E864A9F55C4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(X201(\u8521\u51cc\u7ebf))",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u7762\u5b81\u53bfX201(\u8521\u51cc\u7ebf)\u4e07\u798f\u4f73\u82d1\u5c0f\u533a\u9644\u8fd148\u7c73",
+    "phone": null,
+    "latitude": 33.82447,
+    "longitude": 118.135214,
+    "id": 5,
+    "location": "0101000020E610000087FD9E58A7885D403D44A33B88E94040"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u6f58\u5b89\u6e56\u5965\u7279\u83b1\u65af\u8d2d\u7269\u5e7f\u573a)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u6f58\u5b89\u8def\u5357\u4fa7\u6f58\u5b89\u6e56\u5965\u7279\u83b1\u65af\u8d2d\u7269\u5e7f\u573a\u5185",
+    "phone": null,
+    "latitude": 34.365234,
+    "longitude": 117.40561,
+    "id": 6,
+    "location": "0101000020E61000008E3BA583F5595D4092B1DAFCBF2E4140"
+  },
+  {
+    "name": "\u56fd\u5bb6\u7535\u7f51\u6c7d\u8f66\u5145\u7535\u7ad9(\u4e2d\u56fd\u77f3\u5316\u5f90\u5dde\u5e02...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e91\u9f99\u533aG104",
+    "phone": null,
+    "latitude": 34.177198,
+    "longitude": 117.308579,
+    "id": 7,
+    "location": "0101000020E6100000DF4E22C2BF535D4053758F6CAE164140"
+  },
+  {
+    "name": "\u5494\u5494\u7535\u59c6\u6c7d\u8f66\u5145\u7535\u7ad9(\u9f99\u56fa\u9547\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bfS253",
+    "phone": null,
+    "latitude": 34.91263,
+    "longitude": 116.821972,
+    "id": 8,
+    "location": "0101000020E6100000938E72309B345D409BAC510FD1744140"
+  },
+  {
+    "name": "\u9a74\u5145\u5145\u5145\u7535\u7ad9(\u9a74\u5145\u5145\u5145\u7535\u7ad9(\u5f90\u5dde\u5e02...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u5434\u4e2d\u8857002\u53f7",
+    "phone": null,
+    "latitude": 34.330906,
+    "longitude": 117.405849,
+    "id": 9,
+    "location": "0101000020E61000005187156EF9595D406C06B8205B2A4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(S251(\u90b3\u7762\u8def))",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u7762\u5b81\u53bfS251(\u90b3\u7762\u8def)\u5927\u5b98\u5e84\u515a\u7fa4\u670d\u52a1\u4e2d\u5fc3\u897f69\u7c73",
+    "phone": null,
+    "latitude": 34.1107,
+    "longitude": 117.885529,
+    "id": 10,
+    "location": "0101000020E610000037AAD381AC785D4067D5E76A2B0E4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(X304(\u9ec4\u674e\u7ebf))",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533aX304(\u9ec4\u674e\u7ebf)\u4e50\u8d2d\u6279\u53d1\u8d85\u5e02(\u9ec4\u674e\u7ebf\u5e97)\u897f120\u7c73",
+    "phone": null,
+    "latitude": 34.454101,
+    "longitude": 116.926804,
+    "id": 11,
+    "location": "0101000020E61000005473B9C1503B5D405B0A48FB1F3A4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(S253(\u6c49\u6e90\u5927\u9053))",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bfS253(\u6c49\u6e90\u5927\u9053)\u90dd\u5be8\u6c7d\u8f66\u7ad9\u897f\u5357194\u7c73",
+    "phone": null,
+    "latitude": 34.808064,
+    "longitude": 116.912715,
+    "id": 12,
+    "location": "0101000020E610000065E42CEC693A5D40988922A46E674140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(S253)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6c9b\u53bfS253\u6c9b\u9f99\u5bb6\u5177\u5317152\u7c73",
+    "phone": null,
+    "latitude": 34.580686,
+    "longitude": 116.989141,
+    "id": 13,
+    "location": "0101000020E61000007F880D164E3F5D405E9F39EB534A4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u5927\u5c6f\u519c\u8d38\u5e02\u573a)",
+    "address": "\u5f90\u5dde\u5e02\u6c9b\u53bf\u5929\u6d25\u8def\u6c5f\u5357\u7eff\u6d32\u897f\u5357\u4fa7\u7ea670\u7c73\u5927\u5c6f\u519c\u8d38\u5e02\u573a",
+    "phone": null,
+    "latitude": 34.811045,
+    "longitude": 116.906663,
+    "id": 14,
+    "location": "0101000020E6100000915F3FC4063A5D40CB4A9352D0674140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u5f90\u5dde\u7ecf\u6d4e\u5f00\u53d1\u533a\u5927\u9ec4...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u534f\u946b\u5927\u9053\u5f90\u5dde\u5f00\u53d1\u533a\u5927\u9ec4\u5c71\u8857\u9053\u7eaa\u68c0\u59d4\u5f90\u5dde\u7ecf\u6d4e\u5f00\u53d1\u533a\u5927\u9ec4\u5c71\u8857\u9053\u529e\u4e8b\u5904",
+    "phone": null,
+    "latitude": 34.299683,
+    "longitude": 117.349727,
+    "id": 15,
+    "location": "0101000020E6100000CEE15AED61565D40661536035C264140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u4e3d\u99a8\u5bb6\u56ed)",
+    "address": "\u5f90\u5dde\u5e02\u7762\u5b81\u53bf\u5e9c\u524d\u897f\u8def\u9ad8\u4f5c\u9547\u4e2d\u5fc3\u5c0f\u5b66\u897f\u4fa7\u7ea6220\u7c73\u4e3d\u99a8\u5bb6\u56ed",
+    "phone": null,
+    "latitude": 33.914981,
+    "longitude": 118.045713,
+    "id": 16,
+    "location": "0101000020E6100000220038F6EC825D400EBBEF181EF54040"
+  },
+  {
+    "name": "\u94f6\u674f\u5e7f\u573a\u516c\u4ea4\u9996\u672b\u7ad9\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u95fd\u6c5f\u8def\u4e66\u9999\u82d1\u5317\u4fa7\u7ea640\u7c73",
+    "phone": null,
+    "latitude": 34.333255,
+    "longitude": 117.98335,
+    "id": 17,
+    "location": "0101000020E610000062A1D634EF7E5D403F1D8F19A82A4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u7126\u8425\u5c0f\u533a)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u7762\u5b81\u53bf\u53cc\u5854\u5357\u8def\u7126\u8425\u5c0f\u533a",
+    "phone": null,
+    "latitude": 34.032941,
+    "longitude": 117.597477,
+    "id": 18,
+    "location": "0101000020E61000002EC72B103D665D4049D9226937044140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u6052\u76db\u5e7f\u573a\u5730\u4e0b\u505c\u8f66\u573a\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6cc9\u5c71\u533a\u6c38\u5b89\u8857\u9053\u6052\u76db\u5e7f\u573a",
+    "phone": null,
+    "latitude": 34.265004,
+    "longitude": 117.165645,
+    "id": 19,
+    "location": "0101000020E6100000BD6F7CED994A5D4093A7ACA6EB214140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9(\u94dc\u5c71\u533a\u5b66\u82d1\u8def\u79fb\u52a8\u5927\u697c\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u5b66\u82d1\u8def8\u53f7",
+    "phone": null,
+    "latitude": 34.206468,
+    "longitude": 117.195614,
+    "id": 20,
+    "location": "0101000020E6100000F22895F0844C5D40D4D51D8B6D1A4140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u9752\u5e74\u897f\u8def50-8\u53f7",
+    "phone": "13905227773",
+    "latitude": 34.320425,
+    "longitude": 117.957028,
+    "id": 79,
+    "location": "0101000020E6100000CD565EF23F7D5D4010E9B7AF03294140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533aX303(\u67f3\u9752\u7ebf)",
+    "phone": null,
+    "latitude": 34.449345,
+    "longitude": 117.308112,
+    "id": 80,
+    "location": "0101000020E610000054E0641BB8535D4081CF0F2384394140"
+  },
+  {
+    "name": "\u623f\u5e84\u6751\u9a74\u5145\u5145\u5feb\u901f\u5145\u7535\u6869",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02",
+    "phone": null,
+    "latitude": 34.400325,
+    "longitude": 118.256403,
+    "id": 89,
+    "location": "0101000020E61000002AE620E868905D40B7627FD93D334140"
+  },
+  {
+    "name": "\u5f90\u5dde\u4e1c\u7ad9\u4e1c\u5e7f\u573a-\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u7ad9\u4e1c\u8def\u5f90\u5dde\u4e1c\u7ad9\u4e1c\u5e7f\u573a\u5730\u4e0b\u505c\u8f66\u573a",
+    "phone": null,
+    "latitude": 34.273986,
+    "longitude": 117.316768,
+    "id": 111,
+    "location": "0101000020E6100000D61A4AED45545D40EBC726F911234140"
+  },
+  {
+    "name": "\u851a\u6765\u6362\u7535\u7ad9(G2\u9ad8\u901f\u65b0\u6c82\u670d\u52a1\u533a(\u4e0a...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u9ad8\u6d41\u9547\u65b0\u6c82\u670d\u52a1\u533a",
+    "phone": null,
+    "latitude": 34.333899,
+    "longitude": 118.545861,
+    "id": 112,
+    "location": "0101000020E61000005CCAF962EFA25D406495D233BD2A4140"
+  },
+  {
+    "name": "\u9a74\u5145\u5145\u5145\u7535\u7ad9(\u6885\u5e84\u9762\u7c89\u5382\u4e1c\u5357)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533aG310(\u8fde\u5171\u7ebf)\u6885\u5e84\u9762\u7c89\u5382\u4e1c\u5357106\u7c73",
+    "phone": null,
+    "latitude": 34.375471,
+    "longitude": 117.277999,
+    "id": 113,
+    "location": "0101000020E6100000865451BCCA515D4057CC086F0F304140"
+  },
+  {
+    "name": "\u5f90\u5dde\u53ef\u561f\u65b0\u80fd\u6e90\u6c7d\u8f66\u5145\u7535\u7ad9(\u8363\u76db\u5546\u4e1a...",
+    "address": "\u5f90\u5dde\u5e02\u9f13\u697c\u533a\u666f\u56ed\u8def\u4e5d\u91cc\u5cf0\u666f-D\u533a",
+    "phone": null,
+    "latitude": 34.286229,
+    "longitude": 117.168394,
+    "id": 114,
+    "location": "0101000020E6100000EEB5A0F7C64A5D405915E126A3244140"
+  },
+  {
+    "name": "\u851a\u6765\u6362\u7535\u7ad9G30\u8fde\u970d\u9ad8\u901f\u90b5\u697c\u670d\u52a1\u533a...",
+    "address": "\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u8fde\u970d\u9ad8\u901f\u90b5\u697c\u670d\u52a1\u533a",
+    "phone": null,
+    "latitude": 34.221693,
+    "longitude": 117.522205,
+    "id": 115,
+    "location": "0101000020E6100000B13385CE6B615D404660AC6F601C4140"
+  },
+  {
+    "name": "\u661f\u661f\u5145\u7535(\u516c\u4ea4\u5546\u8d38\u5927\u53a6\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6cc9\u5c71\u533a\u7164\u5efa\u4e00\u8857\u4e0e\u4e8c\u73af\u897f\u8def\u4ea4\u6c47\u5904\u516c\u4ea4\u5546\u8d38\u5927\u53a6\u505c\u8f66\u573a\u5185",
+    "phone": "4008280768",
+    "latitude": 34.266951,
+    "longitude": 117.16548,
+    "id": 116,
+    "location": "0101000020E610000018096D39974A5D4037514B732B224140"
+  },
+  {
+    "name": "\u542f\u6e90\u82af\u52a8\u529b\u5145\u6362\u7535\u7ad9(\u5f90\u5dde\u95fd\u6c5f\u8def\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u95fd\u6c5f\u8def\u5f90\u5dde\u51ef\u83ab\u5c14\u91cd\u5de5\u79d1\u6280\u6709\u9650\u516c\u53f8",
+    "phone": null,
+    "latitude": 34.159877,
+    "longitude": 117.169749,
+    "id": 117,
+    "location": "0101000020E6100000D6E1E82ADD4A5D40F9307BD976144140"
+  },
+  {
+    "name": "\u7279\u6765\u7535\u5145\u7535\u7ad9(\u65b0\u6c82\u65b0\u4e1c\u8def\u5145\u7535\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u5317\u6c9f\u8857\u9053\u5927\u6865\u4e1c\u8def3\u53f7\u4e1c\u65b9\u540d\u4eba\u6e7e1\u671f",
+    "phone": null,
+    "latitude": 34.359464,
+    "longitude": 118.373327,
+    "id": 118,
+    "location": "0101000020E6100000AFEDED96E4975D40700B96EA022E4140"
+  },
+  {
+    "name": "\u7fd8\u695a\u79d1\u6280\u76f4\u6d41\u667a\u80fd\u5145\u7535\u7ad9(\u5361\u8fea\u4e9a\u9152\u5e97\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u6cc9\u5c71\u533a\u5f90\u5dde\u5361\u8fea\u4e9a\u56fd\u9645\u5927\u9152\u5e97",
+    "phone": null,
+    "latitude": 34.26393,
+    "longitude": 117.16525,
+    "id": 119,
+    "location": "0101000020E61000007F6ABC74934A5D4076374F75C8214140"
+  },
+  {
+    "name": "\u7279\u6765\u7535\u5145\u7535\u7ad9(\u5f90\u5dde\u73af\u4fdd\u79d1\u6280\u5927\u53a6\u5145\u7535\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e91\u9f99\u533a\u9f99\u6e56\u897f\u8def\u5357\u5ef6\u4e1c\u4fa7\u73af\u4fdd\u79d1\u7814\u5927\u53a6\u5730\u4e0b\u505c\u8f66\u573a(\u8f66\u4f4d\u53f7001-010)",
+    "phone": null,
+    "latitude": 34.263338,
+    "longitude": 117.281442,
+    "id": 120,
+    "location": "0101000020E6100000226E4E2503525D40A3E5400FB5214140"
+  },
+  {
+    "name": "\u9a74\u5145\u5145\u6c7d\u8f66\u5145\u7535\u7ad9(\u78be\u5e84\u9547\u946b\u8d1d\u514b\u7535\u529b...",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u78be\u5e84\u9547\u5f90\u5dde\u946b\u8d1d\u514b\u7535\u529b\u8bbe\u5907\u80a1\u4efd\u6709\u9650\u516c\u53f8\u95e8\u53e3",
+    "phone": null,
+    "latitude": 34.312405,
+    "longitude": 117.764447,
+    "id": 121,
+    "location": "0101000020E61000009F211CB3EC705D40AE0D15E3FC274140"
+  },
+  {
+    "name": "\u77f3\u5316\u6613\u7535(\u4e2d\u4e1a\u6167\u8c37\u5145\u7535\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533aG310(\u897f\u7eac\u4e09\u8def)",
+    "phone": null,
+    "latitude": 34.397203,
+    "longitude": 117.395096,
+    "id": 122,
+    "location": "0101000020E6100000F2B1BB4049595D40C16F438CD7324140"
+  },
+  {
+    "name": "\u4e91\u5feb\u5145\u5145\u7535\u7ad9(\u4e30\u53bf\u534e\u5c71\u9ad8\u4e2d\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u4e30\u53bf\u534e\u5c71\u4e2d\u5b66",
+    "phone": "4008288517",
+    "latitude": 34.63903,
+    "longitude": 116.743271,
+    "id": 123,
+    "location": "0101000020E61000002C4487C0912F5D40D9942BBCCB514140"
+  },
+  {
+    "name": "\u7535\u52a8\u6c7d\u8f66\u5145\u7535\u7ad9",
+    "address": "\u5f90\u5dde\u5e02\u6c9b\u53bf\u4e1c\u98ce\u897f\u8def\u897f\u82d1\u5c0f\u533a\u897f\u5317\u4fa7\u7ea650\u7c73",
+    "phone": null,
+    "latitude": 34.74083,
+    "longitude": 116.919201,
+    "id": 124,
+    "location": "0101000020E6100000D55C6E30D43A5D40A6F27684D35E4140"
+  },
+  {
+    "name": "UE\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u90b3\u5dde\u5e02\u8fbd\u6cb3\u897f\u8def",
+    "phone": null,
+    "latitude": 34.359305,
+    "longitude": 117.979889,
+    "id": 125,
+    "location": "0101000020E6100000732D5A80B67E5D400725CCB4FD2D4140"
+  },
+  {
+    "name": "\u5f90\u5dde\u8d3e\u6c6a\u543e\u60a6\u5e7f\u573a\u5c0f\u9e4f\u8d85\u5145\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u8d3e\u6c6a\u533a\u5927\u6cc9\u8857\u9053\u5f90\u5dde\u8d3e\u6c6a\u543e\u60a6\u5e7f\u573a",
+    "phone": null,
+    "latitude": 34.425314,
+    "longitude": 117.459803,
+    "id": 126,
+    "location": "0101000020E610000092E68F696D5D5D40F6436CB070364140"
+  },
+  {
+    "name": "\u4e91\u5feb\u5145\u5145\u7535\u7ad9(\u82cf\u901a\u7535\u529b\u5f90\u5e84\u738b\u697c\u6751\u90e8...",
+    "address": "\u94dc\u5c71\u533a\u738b\u697c\u6751\u6751\u6c11\u59d4\u5458\u4f1a",
+    "phone": "4008288517",
+    "latitude": 34.246982,
+    "longitude": 117.50451,
+    "id": 127,
+    "location": "0101000020E610000051A04FE449605D40B0592E1B9D1F4140"
+  },
+  {
+    "name": "\u4e2d\u56fd\u77f3\u5316\u5145\u7535\u7ad9(\u4e2d\u56fd\u519c\u4e1a\u94f6\u884c\u65b0\u6c82\u652f\u884c\u7ad9)",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u65b0\u6c82\u5e02\u949f\u543e\u8def185\u53f7",
+    "phone": null,
+    "latitude": 34.365109,
+    "longitude": 118.357853,
+    "id": 128,
+    "location": "0101000020E6100000A2F14410E7965D40D53C47E4BB2E4140"
+  },
+  {
+    "name": "\u7279\u6765\u7535\u5145\u7535\u7ad9",
+    "address": "\u6c5f\u82cf\u7701\u5f90\u5dde\u5e02\u94dc\u5c71\u533a\u94f6\u5c71\u8def\u4e2d\u56fd\u5b89\u5168\u8c37\u5357\u4fa7\u7ea630\u7c73",
+    "phone": null,
+    "latitude": 34.151324,
+    "longitude": 117.168109,
+    "id": 129,
+    "location": "0101000020E6100000734A404CC24A5D40CA8CB7955E134140"
+  },
+  {
+    "name": "\u6c49\u74e6\u7279\u7535\u529b\u5145\u7535\u7ad9",
+    "address": "\u5f90\u5dde\u5e02\u6c9b\u53bf\u94c1\u4e1c\u8def\u91d1\u8302\u534e\u5ead\u897f\u5357\u4fa7\u7ea640\u7c73",
+    "phone": null,
+    "latitude": 34.810914,
+    "longitude": 116.895481,
+    "id": 130,
+    "location": "0101000020E61000001F4C8A8F4F395D402CEFAA07CC674140"
+  }
+]
