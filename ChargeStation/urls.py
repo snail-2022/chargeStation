@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from userManagement.views import register, register_page, login_page, login, index, managerIndex, logout
-from message.views import messageForm, showMessages, leaveMessage,messageMain,leaveMessagePage
+from message.views import messageForm, showMessages, leaveMessage,messageMain,leaveMessagePage,showMessagePage
 from chat.views import RobPage,ChatView
 from station import geoserver
 from station import views
@@ -43,6 +43,7 @@ urlpatterns = [
     # ***************************************************************************#
     path('messageMain/', messageMain, name='messageMain'),
     path('messageMain/leaveMessagePage/', leaveMessagePage, name='leaveMessagePage'),
+    path('messageMain/showMessagePage/', showMessagePage, name='showMessagePage'),
     path('messageForm/', messageForm, name='messageForm'),
     path('leaveMessage/', leaveMessage, name='leaveMessage'),
     path('showMessages/', showMessages, name='showMessages'),

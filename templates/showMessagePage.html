@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言显示界面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .message-board {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .username {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .timestamp {
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        .message-content {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="comment">
+        <div class="comment-header">
+            <h2>留言标题</h2>
+        </div>
+        <div id="messages" class="comment-content">
+            这里是留言的内容。
+        </div>
+    </div>
+    <!-- 根据实际情况，可以通过循环等方式生成多个留言 -->
+    <script>
+        // 异步加载留言
+        // 异步加载留言
+        function loadMessages() {
+            fetch('/showMessages/')
+            .then(response => response.json())
+            .then(data => {
+                const messagesDiv = document.getElementById('messages');
+                messagesDiv.innerHTML = ''; // 清空留言区域
+                data.messages.forEach(message => {
+                    const messageElement = document.createElement('div');
+                    messageElement.innerHTML = `<strong>${message.username}</strong>: ${message.content} (${message.timestamp})`;
+                    messagesDiv.appendChild(messageElement);
+                });
+            });
+        }
+        // 页面加载完成后加载留言
+        window.onload = function () {
+            loadMessages();
+        };
+    </script>
+</body>
+
+</html>

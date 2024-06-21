@@ -10,28 +10,44 @@ from django.contrib.auth.decorators import login_required
 
 def messageMain(request):
     return render(request, "messageMain.html")
-
 def leaveMessagePage(request):
     return render(request, "leaveMessagePage.html")
-
-
-
+def showMessagePage(request):
+    return render(request, "try.html")
 def messageForm(request):
     return render(request, "message.html")
-
-
 def leaveMessage(request):
     if request.method == "POST":
         content = request.POST.get('content')
-        if content:
-            Message.objects.create(username=request.user.username, content=content, timestamp=timezone.now())
+        title = request.POST.get('title')
+        contact = request.POST.get('contact')
+        #image = request.FILES.get('image')  # 处理上传的图片
+        if content and title:
+            message = Message(
+                username=request.user.username,
+                content=content,
+                title=title,
+                contact=contact,
+                #image=image,
+                timestamp=timezone.now()
+            )
+            message.save()
             return JsonResponse({"status": "success", "message": "留言已保存"})
-    return JsonResponse({"status": "error", "message": "未能保存留言"})
+        else:
+            return JsonResponse({"status": "error", "message": "内容和标题是必填项"})
+    return JsonResponse({"status": "error", "message": "请求方法不正确"})
 
 def showMessages(request):
     messages = Message.objects.order_by('-timestamp')[:10]  # 显示最近的10条留言
     messages_data = [
-        {"username": msg.username, "content": msg.content, "timestamp": msg.timestamp}
+        {
+            "username": msg.username,
+            "content": msg.content,
+            "title": msg.title,
+            "contact": msg.contact,
+            #"image": msg.image.url if msg.image else None,  # 检查图片是否存在
+            "timestamp": msg.timestamp
+        }
         for msg in messages
     ]
     return JsonResponse({"messages": messages_data})

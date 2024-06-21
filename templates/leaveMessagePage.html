@@ -56,18 +56,14 @@
 
         /* 其他样式可以根据需要添加 */
     </style>
-<</head>
+</head>
 <body>
     <div class="container">
         <h1>留言板</h1>
-        <form action="/submit_message" method="post" enctype="multipart/form-data"> <!-- 假设的表单提交地址 -->
+        <form id="messageForm" method="post" >
             <div class="form-group">
-                <label for="userType">用户类型：</label>
-                <select id="userType" name="userType">
-                    <option value="citizen">用户1</option>
-                    <option value="enterprise">用户2</option>
-                    <!-- 其他选项 -->
-                </select>
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" value="{{ user.username }}" readonly><br><br>
             </div>
             <div class="form-group">
                 <label for="title">标题：</label>
@@ -90,5 +86,43 @@
             </div>
         </form>
     </div>
+<script>
+    // 提交留言
+    document.getElementById('messageForm').addEventListener('submit', function(event) {
+        // 阻止表单的默认提交行为
+        event.preventDefault();
+        // 创建一个新的FormData对象来收集表单数据
+        var formData = new FormData(this);
+        // 创建一个新的XMLHttpRequest对象
+        var xhr = new XMLHttpRequest();
+        // 初始化一个POST请求
+        xhr.open('POST', '/leaveMessage/', true);
+        // 设置请求头，表示这是一个AJAX请求
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        // 当readyState属性发生变化时，onreadystatechange事件被触发
+        xhr.onreadystatechange = function() {
+            // readyState为4表示请求已完成
+            if (xhr.readyState === 4) {
+                // 如果请求成功
+                if (xhr.status === 200) {
+                    // 解析服务器返回的JSON数据
+                    var data = JSON.parse(xhr.responseText);
+                    // 如果服务器返回的状态是 "success"
+                    if (data.status === 'success') {
+                        alert(data.message);
+                        loadMessages(); // 提交成功后刷新留言列表
+                        document.getElementById('content').value = ''; // 提交留言后清空留言板
+                    } else {
+                        alert(data.message);
+                    }
+                } else {
+                    alert('提交留言时发生错误，请稍后重试。');
+                }
+            }
+        };
+         // 发送请求，包含表单数据
+        xhr.send(formData);
+    });
+    </script>
 </body>
 </html>

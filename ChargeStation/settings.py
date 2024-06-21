@@ -141,3 +141,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 GDAL_LIBRARY_PATH = r"E:\Users\czk\anaconda3\envs\webgis\Library\bin\gdal.dll"
+
