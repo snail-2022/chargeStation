@@ -1,29 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>首页</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+        <title>学园都市</title>
+        <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+        <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+        <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+        <!-- <link href="./statas2/daohanglan.css" type="text/css" rel="stylesheet"/>
+        <link href="./statas2/denglucss.css" type="text/css" rel="stylesheet"/> -->
+        <script type="text/javascript">
+            window._AMapSecurityConfig = {
+              securityJsCode: "5ee8f547f429d19e45f8fdf34690cded",
+            };
+          </script>
+        <script src="https://webapi.amap.com/maps?v=2.0&key=49249ac1d0084af1a37cd960158b3d7c&&plugin=AMap.Scale,AMap.ToolBar,AMap.ControlBar,AMap.Geolocation,AMap.MapType,AMap.Weather,AMap.Driving,AMap.Walking,AMap.Transfer,AMap.Riding,AMap.PlaceSearch,AMap.AutoComplete,AMap.PlaceSearch"></script>
+        <!--如果想要添加组件。先去上面plugin里面添加一下  -->
+        <style>
+            body {
+                background-color: white;
+                /* background-image: url(./zhuyebeijing.jpg); */
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            /* 鼠标点击事件 */
+            h6 {
+                user-select: none;
+                cursor: auto
+            }
+
+            span img {
+                width: 250px;
+                height: 250px;
+            }
+            /* 鼠标点击事件 */
+            /* 导航栏 */
+            header {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+                background-color: transparent;
+                transition: background-color 0.3s, color 0.3s;
+            }
+            .navbar-left {
+                display: flex;
+                align-items: center; /* 确保图片和文字在同一水平线上 */
+            }
+
+            .navbar img {
+                margin-left: 15px; /* 确保图片与边缘有一定间距 */
+                height: 40px; /* 设置图片高度 */
+                width: auto; /* 自动调整宽度以保持纵横比 */
+            }
+
+            .navbar ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+            .navbar li {
+                margin: 0 15px;
+            }
+
+            .navbar a {
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+                font-size: 18px;
+                padding: 15px;
+                display: block;
+                transition: color 0.3s;
+            }
+
+            .navbar a.active, .navbar a:hover {
+                color: #FF6600; 
+            }
+
+            .sticky {
+                background-color: white;
+            }
+
+            .sticky a {
+                color: black;
+            }
+            /* 导航栏 */
+        </style>
     </head>
     <body>
-        <div>
-            <h4>{{ name }} 欢迎登陆！</h4>
+        <!-- 鼠标点击事件 -->
+        <div class="mt"><a href=""></a></div>
+        <!-- 鼠标点击事件 -->
+        <!-- 导航栏 -->
+        <header>
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <img src="./status3/充电桩.svg" alt="">
+                    <a href="##" id="daohanglandebiaoti">充电桩管理系统</a>
+                </div>
+                <ul>
+                    <li><a href="#">功能1</a></li>
+                    <li><a href="#">功能2</a></li>
+                    <li><a href="#">功能3</a></li>
+                    <li><a href="#">功能4</a></li>
+                    <li><a href="#">功能5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 导航栏 -->
+        <main>
+        </main>
+            <!-- 内容页 -->
+            <div class="content">
+                 
+                
+            </div>
         </div>
-        <div>
-            <h5>
-                <label>user: </label>
-                {{ request.user }}
-            </h5>
-            <h5>
-                <label>user.name: </label>
-                {{ request.user.username }}
-            </h5>
-            <h5>
-                <label>user.password: </label>
-                {{ request.user.password }}
-            </h5>
-        </div>
-        <div>
-            <a href="logout">退出</a>
-        </div>
+        <!-- 内容页 -->
+        <!-- 底部 -->
+        <script>
+                    // 导航栏高亮与移除
+        const systemLink = document.getElementById('daohanglandebiaoti');
+        const navLinks = document.querySelectorAll('.navbar ul li a');
+
+        systemLink.addEventListener('click', function(event) {
+            event.preventDefault(); // 阻止默认跳转行为
+            navLinks.forEach(link => link.classList.remove('active'));
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // 阻止默认跳转行为
+                navLinks.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        // 鼠标点击事件
+// 鼠标点击事件
+// 鼠标点击事件
+function bg3() {
+    var rs = Math.floor(Math.random() * (170 - 100) + 100);
+    var gs = Math.floor(Math.random() * (170 - 100) + 100);
+    var bs = Math.floor(Math.random() * (100 - 90) + 90);
+    return "rgb(" + rs + ',' + gs + ',' + bs + ")";
+}
+
+var as = ["富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法制", "爱国", "敬业", "诚信", "友善"];
+
+// 绑定到整个文档的点击事件
+document.addEventListener('click', function (e) {
+    var spans = document.createElement("h6");
+    spans.textContent = as[Math.floor(Math.random() * as.length)];
+    spans.style.position = "absolute";
+    spans.style.color = bg3();
+    spans.style.transition = "all .5s"; // 更改为 all 以包括 opacity 和 transform
+
+    // 获取当前滚动偏移量
+    var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+    spans.style.left = (e.clientX + scrollLeft) + 'px'; // 加上水平滚动偏移量
+    spans.style.top = (e.clientY + scrollTop) + 'px'; // 加上垂直滚动偏移量
+
+    // 初始状态
+    spans.style.opacity = "0";
+    spans.style.transform = "translateY(0) scale(1)";
+
+    // 添加到文档
+    document.body.appendChild(spans);
+
+    // 动画效果
+    setTimeout(function () {
+        spans.style.opacity = "1";
+        spans.style.transform = "translateY(-50px) scale(1.5)";
+    }, 100);
+
+    setTimeout(function () {
+        spans.style.opacity = "0";
+        spans.style.transform = "translateY(-200px) scale(0)";
+
+        // 当动画完成后，从DOM中移除元素
+        setTimeout(function () {
+            spans.parentNode.removeChild(spans);
+        }, 500);
+    }, 500);
+});
+
+// 鼠标点击事件
+// 鼠标点击事件
+// 鼠标点击事件
+        </script>
     </body>
-</html>
+    </html>
