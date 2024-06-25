@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言显示界面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+        }
+        .top-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #218838;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .message-board {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .message-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .username {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .timestamp {
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        .message-content {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .reply-section {
+            margin-top: 10px;
+        }
+
+        .reply-input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .reply-button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .reply-button:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="top-bar">
+            <div class="logo">留言板</div>
+            <div class="search-bar">
+                <input type="text" placeholder="搜索...">
+                <button type="button">搜索</button>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="/messageMain/leaveMessagePage/">留言</a></li>
+                <li><a href="#">我的留言</a></li>
+                <li><a href="#">搜索</a></li>
+                <li><a href="/messageMain/showMessagePage/">浏览</a></li>
+            </ul>
+        </nav>
+        <div class="message-board">
+            <div id="messages" class="message-content">
+                <!-- 留言将在这里显示 -->
+            </div>
+        </div>
+        <div class="footer">
+            <p>留言板</p>
+            <p>邮箱：<a href="mailto:2993944330@qq.com">2993944330@qq.com</a></p>
+            <p>QQ：299394433</p>
+            <p>未经书面授权禁止使用</p>
+            <p>帮助中心：<a href="#">管理条例</a> | <a href="#">留言基础操作</a> | <a href="#">常见问题</a> | <a href="#">注册与登录</a> | <a
+                    href="#">高级功能操作</a></p>
+        </div>
+    </div>
+    <!-- 根据实际情况，可以通过循环等方式生成多个留言 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadMessages();
+        });
+
+        function loadMessages() {
+            fetch('/showMessages/')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                displayMessages(data.messages);
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+        }
+
+        function displayMessages(messages) {
+            const messagesDiv = document.getElementById('messages');
+            messagesDiv.innerHTML = ''; // 清空留言区域
+            messages.forEach(message => {
+                const messageElement = createMessageElement(message);
+                messagesDiv.appendChild(messageElement);
+            });
+        }
+
+        function createMessageElement(message) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message');
+            messageElement.innerHTML = `
+                <div class="message-title">${message.title}</div>
+                <div class="message-header">
+                    <span class="username">${message.username}</span>
+                    <span class="timestamp">${message.timestamp}</span>
+                </div>
+                <div class="message-content">${message.content}</div>
+                <div class="message-content">${message.reply}</div>
+                {% if user.is_staff %}
+                <div class="reply-section">
+                    <input type="text" class="reply-input" placeholder="回复...">
+                    <button type="button" class="reply-button" onclick="replyToMessage(${message.messageid})">回复</button>
+                </div>
+                {% endif %}
+            `;
+            return messageElement;
+        }
+
+        function replyToMessage(messageId) {
+            alert(messageId)
+            // 获取输入框的值
+            var replyText = document.querySelector('.reply-input').value;
+
+            // 发送请求的代码
+            fetch('/replyToMessage/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    messageId: messageId,
+                    replyText: replyText
+                })
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Network response was not ok, status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Success:', data);
+                })
+                .catch((error) => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>

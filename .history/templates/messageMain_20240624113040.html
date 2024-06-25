@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex: 1;
+        }
+        .top-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .search-bar {
+            display: flex;
+        }
+        .search-bar input[type="text"] {
+            padding: 5px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #218838;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .stats {
+            background-color: #fff;
+            padding: 10px 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .areas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* 调整为space-around使得在大屏幕上更加美观 */
+
+        }
+        .area {
+            background-color: #ffffff;
+            border-radius: 5p;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 30px 5px;
+            width: calc(20% - 40px); /* 计算每个区域的宽度，减去边距 */
+            text-align: left; /* 将文本内容靠左对齐 */
+            margin-bottom: 20px; /* 添加底部间距，使得区域之间有间隔 */
+        }
+        .area::after {
+            content: ''; /* 添加伪元素内容 */
+            position: absolute; /* 绝对定位 */
+            bottom: 0; /* 确保在区域底部 */
+            left: 20px; /* 距离左侧20像素 */
+            width: calc(100% - 40px); /* 宽度为区域宽度减去左右填充 */
+            border-bottom: 1px solid #ccc; /* 添加底部边框线 */
+            position: relative; /* 添加相对定位，以便使用伪元素绝对定位 */
+        }
+        .area h3 {
+            margin: 0;
+            font-size: 18px; /* 示例中增加一个字体大小的设置 */
+        }
+
+        .area p {
+            margin: 10px 0;
+            color: #666;
+            font-size: 14px; /* 示例中增加一个字体大小的设置 */
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="top-bar">
+            <div class="logo">留言板</div>
+            <div class="search-bar">
+                <input type="text" placeholder="搜索...">
+                <button type="button">搜索</button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="/messageMain/leaveMessagePage/">留言</a></li>
+                <li><a href="#">我的留言</a></li>
+                <li><a href="#">搜索</a></li>
+                <li><a href="register">浏览</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="stats">
+                <p>各区历史总留言量： <span id="totalMessages">123</span> 条 历史回复总量： <span id="totalReplies">456</span> 条</p>
+            </div>
+            <div class="areas">
+                <div class="area">
+                    <h3>鼓楼区</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+                <div class="area">
+                    <h3>云龙区</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+                <div class="area">
+                    <h3>贾汪区</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+                <div class="area">
+                    <h3>泉山区</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+                <div class="area">
+                    <h3>铜山区</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+                <div class="area">
+                    <h3>丰县</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+                <div class="area">
+                    <h3>沛县</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+                <div class="area">
+                    <h3>遂宁县</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+                <div class="area">
+                    <h3>新沂市</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+                <div class="area">
+                    <h3>邳州市</h3>
+                    <hr> <!-- 添加一条水平分隔线 -->
+                    <p>年度合计留言量: 13562 条</p>
+                    <p>年度公开回复量: 6251 条</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <p>留言板</p>
+            <p>邮箱：<a href="2993944330@qq.com">2993944330@qq.com</a></p>
+            <p>QQ：299394433</p>
+            <p>未经书面授权禁止使用</p>
+            <p>帮助中心：<a href="#">管理条例</a> | <a href="#">留言基础操作</a> | <a href="#">常见问题</a> | <a href="#">注册与登录</a> | <a
+                    href="#">高级功能操作</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

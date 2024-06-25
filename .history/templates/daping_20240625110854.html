@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>学园都市</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+    <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script type="text/javascript">
+        window._AMapSecurityConfig = {
+          securityJsCode: "5ee8f547f429d19e45f8fdf34690cded",
+        };
+      </script>
+    <script src="https://webapi.amap.com/maps?v=2.0&key=49249ac1d0084af1a37cd960158b3d7c&&plugin=AMap.Scale,AMap.ToolBar,AMap.ControlBar,AMap.Geolocation,AMap.MapType,AMap.Weather,AMap.Driving,AMap.Walking,AMap.Transfer,AMap.Riding,AMap.PlaceSearch,AMap.AutoComplete,AMap.PlaceSearch,AMap.DistrictSearch"></script>
+    <!--如果想要添加组件。先去上面plugin里面添加一下  -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <script src="{% static 'js/echarts.min.js' %}"></script>
+  </head>
+
+  <body>
+    <!-- //地图显示 -->
+    <div id="container"></div>
+    <header>
+      <h1>智慧充电桩管理系统</h1>
+      <a id="shujuzhanshijiemian" href="https://echarts.apache.org/examples/zh/index.html#chart-type-bar">返回主页</a>
+      <div class="showTime">当前时间：2020年3月17-0时54分14秒</div>
+    </header>
+    <section class="mainbox">
+      <div class="column">
+        <div class="panel bar" >
+          <h2 >设备分布</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel bar1">
+          <h2 >设备状况</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line">
+          <h2>检修情况</h2>
+          <div class="chart">
+            <div class="head">
+                <span class="col">检修时间</span>
+                <span class="col">设备地址</span>
+                <span class="col">设备ID</span>
+            </div>
+            <div class="marquee-view">
+              <div class="marquee">
+                <!-- 原始数据 -->
+              <div class="row">
+                <span class="ccol">20250610</span>
+                <span class="ccol">小桔充电汽车充电站(彭城路)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+              <div class="row">
+                <span class="ccol">20250611</span>
+                <span class="ccol">小鹏超级充电站(开放运营-小鹏超充徐州苏宁广场站)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+              <div class="row">
+                <span class="ccol">20250613</span>
+                <span class="ccol">小桔充电汽车充电站(鼓楼区医药健康产业园公牛充电站)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+              <div class="row">
+                <span class="ccol">20250614</span>
+                <span class="ccol">小桔充电汽车充电站(彭城路)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+              <div class="row">
+                <span class="ccol">20250614</span>
+                <span class="ccol">小桔充电汽车充电站(鼓楼区医药健康产业园公牛充电站)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+              <div class="row">
+                <span class="ccol">20250614</span>
+                <span class="ccol">小桔充电汽车充电站(彭城路)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+              <div class="row">
+                <span class="ccol">20250617</span>
+                <span class="ccol">小桔充电汽车充电站(鼓楼区医药健康产业园公牛充电站)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+              <div class="row">
+                <span class="ccol">20250620</span>
+                <span class="ccol">小桔充电汽车充电站(彭城路)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+              <div class="row">
+                <span class="ccol">20250620</span>
+                <span class="ccol">小桔充电汽车充电站(鼓楼区医药健康产业园公牛充电站)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+              <div class="row">
+                <span class="ccol">20250620</span>
+                <span class="ccol">小桔充电汽车充电站(彭城路)</span>
+                <span class="ccol">1000001</span>
+                <span class="icon-dot"></span>
+              </div>
+
+
+
+              </div>
+            </div>
+          </div>
+            <div class="panel-footer"></div>
+          </div>
+
+
+      </div>
+      <div class="column">
+        <div class="no">
+          <div class="no-hd">
+            <ul>
+              <li>200</li>
+              <li>1045</li>
+            </ul>
+          </div>
+          <div class="no-bd">
+            <ul>
+              <li>充电桩数量</li>
+              <li>用户数量</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="panel pie1" >
+          <ul class="zjyl">
+            <li><i>2490<em>时</em></i><span>今日服务时长</span></li>
+            <li><i>211900<em>时</em></i><span>总服务时长</span></li>
+            <li><ii>12<em>个</em></ii><span>今日设备维修</span></li>
+            <li><ii>5<em>个</em></ii><span>今日设备故障</span></li>
+          </ul>
+          <div class="chart"></div>i
+          <div class="panel-footer"></div>
+        </div>
+
+
+        <div class="panel line2">
+          <h2>使用情况（日）</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+
+        <div class="panel line1">
+          <h2>使用情况（月）</h2>
+            <div class="chart"></div>
+            <div class="panel-footer"></div>
+        </div>
+
+      </div>
+    </section>
+    <script src="{% static 'js/flexible.js' %}"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/echarts.min.js' %}"></script>
+    <script src="{% static 'js/output.js' %}"></script>
+    <script>
+
+        var t = null;
+        t = setTimeout(time, 1000); //開始运行
+        function time() {
+          clearTimeout(t); //清除定时器
+          dt = new Date();
+          var y = dt.getFullYear();
+          var mt = dt.getMonth() + 1;
+          var day = dt.getDate();
+          var h = dt.getHours(); //获取时
+          var m = dt.getMinutes(); //获取分
+          var s = dt.getSeconds(); //获取秒
+          document.querySelector(".showTime").innerHTML =
+            "当前时间：" +
+            y +
+            "年" +
+            mt +
+            "月" +
+            day +
+            "-" +
+            h +
+            "时" +
+            m +
+            "分" +
+            s +
+            "秒";
+          t = setTimeout(time, 1000); //设定定时器，循环运行
+        }
+  var opts = {
+    subdistrict: 0,
+    extensions: 'all',
+    level: 'city'
+  };
+
+  var map; // 地图对象
+
+  // 初始化地图
+  function initMap() {
+    var district = new AMap.DistrictSearch(opts);
+    district.search('徐州市', function(status, result) {
+      if (status === 'complete') {
+        var bounds = result.districtList[0].boundaries;
+        var mask = bounds.map(function(bound) { return [bound]; });
+
+        map = new AMap.Map('container', {
+          mask: mask,
+          center: [117.283752, 34.204224],
+          viewMode: '3D',
+          showLabel: false,
+          labelzIndex: 130,
+          pitch: 30,
+          zoom: 15,
+          zooms: [14, 17],
+          layers: [
+            new AMap.TileLayer.RoadNet(),
+            new AMap.TileLayer.Satellite()
+          ]
+        });
+
+        // 添加边界线
+        bounds.forEach(function(bound) {
+          new AMap.Polyline({
+            path: bound,
+            strokeColor: '#99ffff',
+            strokeWeight: 4,
+            map: map
+          });
+        });
+        let radius = 10000000;
+        var infoWindow = new AMap.InfoWindow({
+          offset: new AMap.Pixel(0, -30)
+        });
+
+        const content = `<div class="custom-content-marker">
+          <img src="https://a.amap.com/Loca/static/loca-v2/demos/mock_data/charging_pile.png" style="height:75px;width:48px">
+        </div>`;
+
+        for (let i = 0; i < points.length; i++) {
+          var distance = AMap.GeometryUtil.distance([117.283752, 34.204224], [points[i].longitude, points[i].latitude]);
+          if (distance < radius) {
+            var marker = new AMap.Marker({
+              content: content,
+              position: [points[i].longitude, points[i].latitude],
+            });
+            marker.setExtData({ ...points[i], distance });
+
+            // 绑定鼠标移入和移出事件
+            marker.on('mouseover', function (e) {
+              var extData = e.target.getExtData();
+              var infoContent = `<div class="custom-info-content" >
+                <h4>${extData.name}</h4>
+                <p style="margin: 5px 0;">地址: ${extData.address}</p>
+            <p style="margin: 5px 0;">距离: ${extData.distance ? extData.distance.toFixed(2) + ' 米' : '未知'}</p>
+            <p style="margin: 5px 0;">经度: ${extData.longitude}</p>
+            <p style="margin: 5px 0;">纬度: ${extData.latitude}</p>
+            <p style="margin: 5px 0;">评分: ${extData.stars}</p>
+            <p style="margin: 5px 0;">价格: ¥${extData.price}/度</p>
+                <img src="./images/cdz.png" alt="充电桩图标">
+              </div>`;
+              ;
+
+              infoWindow.setContent(infoContent);
+              infoWindow.open(map, e.target.getPosition());
+            });
+
+            marker.on('mouseout', function () {
+              infoWindow.close();
+            });
+
+            map.add(marker);
+          }
+        }
+        // 右键菜单内容设计结束
+
+        // 监听地图移动事件，确保地图不超出边界
+        map.on('moveend', function() {
+          var center = map.getCenter();
+          var isInBounds = AMap.GeometryUtil.isPointInRing(center, bounds[0]);
+
+          if (!isInBounds) {
+            map.setCenter([117.283752, 34.204224]);
+          }
+        });
+
+      }
+    });
+  }
+
+  // 加载地图
+  initMap();
+
+
+
+
+
+
+    </script>
+    <script src="{% static 'js/echarts.min.js' %}"></script>
+    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+  </body>
+</html>

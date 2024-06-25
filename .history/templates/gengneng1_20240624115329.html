@@ -1,0 +1,263 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+        <title>学园都市</title>
+        <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+        <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+        <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+        <script src="https://unpkg.com/@turf/turf@6.3.0/turf.min.js"></script>
+        <script type="text/javascript">
+            window._AMapSecurityConfig = {
+              securityJsCode: "5ee8f547f429d19e45f8fdf34690cded",
+            };
+          </script>
+        <script src="https://webapi.amap.com/maps?v=2.0&key=49249ac1d0084af1a37cd960158b3d7c&&plugin=AMap.Scale,AMap.ToolBar,AMap.ControlBar,AMap.Geolocation,AMap.MapType,AMap.Weather,AMap.Driving,AMap.Walking,AMap.Transfer,AMap.Riding,AMap.PlaceSearch,AMap.AutoComplete,AMap.PlaceSearch,AMap.GeometryUtil,AMap.Geolocation,AMap.MouseTool"></script>
+        <!--如果想要添加组件。先去上面plugin里面添加一下  -->
+            <!-- pannellum -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+        <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+            <link rel="stylesheet" href="{% static 'status3/zhuye.css' %}" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="{% static 'status3/dituxianshigongneng1.css' %}" />
+            <link rel="stylesheet" href="./status3/xingzhengquhuadaohuanglansheji.css" />{% static 'status3/xingzhengquhuadaohuanglansheji.css' %}
+            <link rel="stylesheet" href="./status3/font/iconfont.css" />
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+    <body>
+        <!-- 鼠标点击事件 -->
+        <div class="mt"><a href=""></a></div>
+        <!-- 鼠标点击事件 -->
+        <!-- 导航栏 -->
+        <header>
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <img src="./status/cdz.png" alt="">
+                     <a href="##" id="daohanglandebiaoti">充电桩管理系统</a>
+                </div>
+                <ul>
+                    <li><a href="#" class="active">功能1</a></li>
+                    <li><a href="#">功能2</a></li>
+                    <li><a href="#">功能3</a></li>
+                    <li><a href="#">功能4</a></li>
+                    <li><a href="#">功能5</a></li>
+                </ul>
+            </nav>
+        </header>
+         <!-- 导航栏 -->
+         <!-- 地图 -->
+         <div id="container"></div>
+         <div id="panel"></div>
+         <div id="tianqichuangkou" style="display: none;" class="info">
+             <h4>预报天气</h4><hr>
+             <p id='forecast'></p>
+         </div>
+         <div id='daohanglan'class='input-card'>
+             <div class="input-item">
+                 <button id="weixing" class="btn-weixing" onclick="weixing()">卫星</button>
+                 <button id="tianqi" class="btn-tianqi" onclick="tianqi()">天气</button>
+                 <button id="daohang" class="btn-daohang" onclick="daohang()">导航</button>
+                 <button id="zexiao" class="btn-zexiao" onclick="sousuo()">查询</button>
+                 <div class="dropdown-content" id="myDropdown">
+                     <button style="width: 100%;height: 36px;" onclick="fujindechongdianzhuang(customRange1.value)">周围电桩</button>
+                     <button style="width: 100%;height: 36px;" onclick="xingzhengquhua()">行政区划</button>
+                     <button style="width: 100%;height: 36px;">未知暂定</button>
+                 </div>
+             </div>
+         </div>
+        <!-- //底部的滑动框 -->
+        <div class="huadongkuang" id="huadongkuang">
+            <input type="range" class="form-range" id="customRange1" min="1" max="10000" value="5000">
+            <div class="value" id="sliderValue">5000</div>
+        </div>
+
+
+         <nav class="menu">
+            <div class="actionsBar">
+                <div>
+                    <button id="menuBtn" type="button">
+                        <i class="iconfont icon-hanbaocaidan"></i>
+                    </button>
+                    <h3 class="menuText">遥感</h3>
+                </div>
+            </div>
+            <ul class="optionsBar">
+                <li class="menuItem">
+                    <a class="menuOption">
+                        <i class="iconfont icon-shouye"></i>
+                        <h5 class="menuText">主页</h5>
+                    </a>
+                </li>
+                <li class="menuBreak">
+                    <hr>
+                </li>
+                <li class="menuItem">
+                    <button class="menuOption" type="button" id="daohanglan1">
+                        <i class="iconfont icon-youjiantou"></i>
+                        <h5 class="menuText">什么是遥感</h5>
+                    </button>
+                </li>
+
+                <li class="menuItem">
+                    <button class="menuOption" type="button" id="daohanglan2">
+                        <i class="iconfont icon-youjiantou"></i>
+                        <h5 class="menuText">遥感的类型</h5>
+                    </button>
+                </li>
+                <li class="menuItem">
+                    <button class="menuOption" type="button" id="daohanglan3">
+                        <i class="iconfont icon-youjiantou"></i>
+                        <h5 class="menuText">遥感卫星群</h5>
+                    </button>
+                </li>
+                <li class="menuItem">
+                    <button class="menuOption" type="button" id="daohanlan4">
+                        <i class="iconfont icon-youjiantou"></i>
+                        <h5 class="menuText">我国的遥感</h5>
+                    </button>
+                </li>
+            </ul>
+            <div class="about" id="about"></div>
+            <div class="menuUser">
+                <a href="#">
+                    <div>
+                        <img src="./status/cdz.png">
+                    </div>
+                    <h5 class="Username menuText">张丕宸</h5>
+                </a>
+            </div>
+            <div class="themeBar">
+                <div>
+                    <button type="button" id="tuichu">
+                        <i class="iconfont icon-tuichu"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+         <!-- 导航 -->
+         <div id='daohangsousuolan'class="input-card" style="display: none;">
+             <div class="input-item">
+                     <div class="input-item-prepend"><span class="input-item-text" >起点</span></div>
+                     <input id='daohangqidian' type="text" value='中国矿业大学南湖校区一食堂'>
+             </div>
+             <div class="input-item">
+                     <div class="input-item-prepend"><span class="input-item-text">终点</span></div>
+                     <input id='daohangzhongdian' type="text"value='中国矿业大学南湖校区环境与测绘学院'>
+             </div>
+             <!-- <input id="kaishidaohang" type="button" class="btn" value="查询" onclick="daohanghanshu()"> -->
+             <button id="kaishidaohang" class="btn" value="查询" onclick="daohanghanshu()">
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        fill="currentColor"
+                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Send</span>
+              </button>
+
+        </div>
+
+        <script>
+            var slider = document.getElementById('customRange1');
+            var sliderValue = document.getElementById('sliderValue');
+
+            slider.addEventListener('input', function() {
+                radius = parseInt(this.value); // 更新搜索半径
+                sliderValue.textContent = `${radius} 米`;
+
+                // 移除所有标记
+                marker_weizhidianbiaoji.forEach(marker => {
+                    map.remove(marker);
+                });
+                marker_weizhidianbiaoji = []; // 清空标记数组
+
+                // 根据新的搜索半径重新搜索充电桩
+                fujindechongdianzhuang();
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+//侧边功能栏
+
+const menuBtn = document.getElementById('menuBtn');
+  const menu = document.querySelector('.menu');
+  const menuText = document.querySelectorAll('.menuText');
+  menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('open');
+      menuText.forEach(function (text, index) {
+          setTimeout(() => {
+              text.classList.toggle('open2');
+          }, index * 50);
+      });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+      var daohanglan1 = document.getElementById('daohanglan1');
+
+      daohanglan1.addEventListener('click', function() {
+          window.location.href = '1.html';
+      });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+      var daohanglan2 = document.getElementById('daohanglan2');
+
+      daohanglan2.addEventListener('click', function() {
+          window.location.href = '3.html';
+      });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+      var daohanglan3 = document.getElementById('daohanglan3');
+
+      daohanglan3.addEventListener('click', function() {
+          window.location.href = '4.html';
+      });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+      var daohanglan4 = document.getElementById('daohanlan4');
+
+      daohanglan4.addEventListener('click', function() {
+          window.location.href = '5.html';
+      });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+      var tuichu = document.getElementById('tuichu');
+
+      tuichu.addEventListener('click', function() {
+          window.location.href = 'denglu.html';
+      });
+  });
+
+
+
+
+
+
+  </script>
+        <script type="text/javascript" src="./status3/output.js" ></script>
+        <script type="text/javascript" src="./status3/dituxianshigongneng1.js" ></script>
+    </body>
+</html>

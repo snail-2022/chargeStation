@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  line-height: 1.15;
+}
+header {
+  opacity: 0.8;
+  position: relative;
+  height: 1rem;
+  background-color: rgba(3, 21, 24, 0.85);
+}
+header h1 {
+  font-size: 0.475rem;
+  text-align: center;
+  color:white ;
+  line-height: 1rem;
+}
+#shujuzhanshijiemian{
+  text-decoration: none;  
+  position: absolute;
+  color:white ;
+  font-size: 20px;
+  top: 0;
+  left: 1rem;
+  line-height: 1rem;
+  font-weight: bold;
+}
+header .showTime {
+  position: absolute;
+  top: 0;
+  right: 0.375rem;
+  color:white ;
+  line-height: 0.9375rem;
+  font-size: 15px;
+}
+.mainbox {
+  min-width: 1024px;
+  max-width: 1920px;
+  padding: 0.125rem 0.125rem 0;
+  display: flex;
+}
+.mainbox .column {
+  flex: 3;
+}
+.mainbox .column:nth-child(2) {
+  flex: 5;
+  margin: 0 0.125rem 0.1875rem;
+  overflow: hidden;
+}
+.panel {
+
+  position: relative;
+  height: 3.875rem;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+   background-color: rgba(22, 31, 38, 0.87);
+  padding: 0 0.1875rem 0.5rem;
+  margin-bottom: 0.1875rem;
+}
+.panel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+.panel::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+}
+.panel .panel-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.panel .panel-footer::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+.panel .panel-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+}
+.panel h2 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.25rem;
+  font-weight: 400;
+}
+.panel h2 a {
+  margin: 0 0.1875rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.panel .chart {
+  height: 3rem;
+}
+
+/* 设置左下第三个保修情况 */
+
+.panel .head{
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.2rem;
+  padding: 0.2rem 0.5rem;
+  color: #61a8ff;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.5;
+}
+.panel .col:nth-child(1) {
+	width: 22%;
+}
+.panel .col:nth-child(2) {
+	width: 56%;
+}
+.panel .marquee-view{
+  position: absolute;
+  top: 1.15rem;
+  bottom: 0; 
+  width: 94%; 
+  overflow: hidden;
+}
+
+.panel .row{
+  line-height: 1.05;
+  padding: 0.2rem 0.5rem;
+  color: #61a8ff;
+  font-size: 0.16rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.panel .ccol:nth-child(1) {
+	width: 22%;
+}
+.panel .ccol:nth-child(2) {
+	width: 56%;
+}
+.panel .row:hover{
+	color:#68d8ff;
+	background: rgba(255, 255, 255, 0.1);
+}
+.panel .row:hover .icon-dot{
+	opacity: 1;
+}
+  
+.panel .icon-dot{
+	position: absolute;
+	left: 0.64rem;
+	opacity: 0;
+}
+
+@keyframes row {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* 调用动画 */
+.panel .marquee {
+  animation: row 80s linear infinite;
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+
+/* 鼠标划入 停止动画 */
+.panel .marquee:hover {
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.no {
+  background: rgba(101, 132, 226, 0.1);
+  padding: 0.1875rem;
+}
+.no .no-hd {
+  position: relative;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+}
+.no .no-hd::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  top: 0;
+  left: 0;
+}
+.no .no-hd::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  right: 0;
+  bottom: 0;
+}
+.no .no-hd ul {
+  display: flex;
+}
+.no .no-hd ul li {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.875rem;
+  color: #ffeb7b;
+  padding: 0.05rem 0;
+  font-family: electronicFont;
+  font-weight: bold;
+}
+.no .no-hd ul li:first-child::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  right: 0;
+  top: 25%;
+}
+.no .no-bd ul {
+  display: flex;
+}
+.no .no-bd ul li {
+  flex: 1;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: 0.225rem;
+  color:white;
+  padding-top: 0.125rem;
+  z-index: 2;
+}
+
+
+
+.zjyl{
+  position: absolute;  
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%); 
+  width: 100%;  
+}
+.zjyl li{float: left; width: 50%; text-align: center;  padding: .2rem 0; position: relative;border-right: 1px solid rgba(103,144,255,.1); }
+.zjyl li i{font-size: .6rem;font-family:electronicFont;color: #fff32b; display: block;}
+.zjyl li i em{font-size: .2rem;color: #fff; opacity: .5;;}
+.zjyl li span{font-size: .3rem; color: #fff; font-weight:lighter;}
+.zjyl li ii{font-size: .6rem;font-family:electronicFont;color: red; display: block;}
+.zjyl li ii em{font-size: .2rem;color: #fff; opacity: .5;;}
+
+
+
+
+
+
+#container {
+  position: absolute;
+  height: 117%;
+  width:100%;
+
+}
+
+
+.panel.bar h2 {
+  font-size: 18px;
+}
+
+.custom-info-content {
+  max-width: 200px; /* 设置最大宽度 */
+  padding: 10px; /* 添加内边距 */
+  background-color: #fff; /* 背景颜色 */
+  border: 1px solid #ccc; /* 边框 */
+  border-radius: 5px; /* 边框圆角 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.custom-info-content h4 {
+  margin: 0 0 5px; /* 标题下边距 */
+  font-size: 16px; /* 标题字体大小 */
+}
+
+.custom-info-content p {
+  margin: 5px 0; /* 段落上下边距 */
+  font-size: 14px; /* 段落字体大小 */
+}
+
+.custom-info-content img {
+  height: 30px; /* 图片高度 */
+  width: 30px; /* 图片宽度 */
+  margin-top: 5px; /* 图片上边距 */
+}
+

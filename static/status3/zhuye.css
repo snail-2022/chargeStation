@@ -1,0 +1,90 @@
+body {
+    background-color: white;
+    /* background-image: url(./zhuyebeijing.jpg); */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/* 鼠标点击事件 */
+h6 {
+    user-select: none;
+    cursor: auto
+}
+
+span img {
+    width: 250px;
+    height: 250px;
+}
+/* 鼠标点击事件 */
+/* 导航栏 */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar-left {
+    display: flex;
+    align-items: center; /* 确保图片和文字在同一水平线上 */
+}
+
+.navbar img {
+    margin-left: 15px; /* 确保图片与边缘有一定间距 */
+    height: 40px; /* 设置图片高度 */
+    width: auto; /* 自动调整宽度以保持纵横比 */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.navbar a.active, .navbar a:hover {
+    color: #FF6600; 
+}
+
+.sticky {
+    background-color: white;
+}
+
+.sticky a {
+    color: black;
+}
+
+
+/* 导航栏 */
+
+
+
+
+
+
+
+
+

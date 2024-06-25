@@ -1,0 +1,331 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+        <title>学园都市</title>
+        <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+        <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+        <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+        <script type="text/javascript">
+            window._AMapSecurityConfig = {
+              securityJsCode: "5ee8f547f429d19e45f8fdf34690cded",
+            };
+          </script>
+        <script src="https://webapi.amap.com/maps?v=2.0&key=49249ac1d0084af1a37cd960158b3d7c&&plugin=AMap.Scale,AMap.ToolBar,AMap.ControlBar,AMap.Geolocation,AMap.MapType,AMap.Weather,AMap.Driving,AMap.Walking,AMap.Transfer,AMap.Riding,AMap.PlaceSearch,AMap.AutoComplete,AMap.PlaceSearch"></script>
+        <!--如果想要添加组件。先去上面plugin里面添加一下  -->
+        <link rel="stylesheet" href="{% static 'status3/zhuye.css' %}" />
+        <link rel="stylesheet" href="{% static 'status3/zhuyegongneng.css' %}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            .chatbot-icon {
+                position: fixed;
+                bottom: 8px;
+                right: 8px;
+                background-color: #007bff;
+                color: white;
+                border-radius: 10px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .chatbot-container {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 300px;
+                max-width: 90%;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                transform: translateX(110%);
+                transition: transform 0.3s ease;
+            }
+
+            .chatbot-container.open {
+                transform: translateX(0);
+            }
+
+            .chatbot-header {
+                background-color: #007bff;
+                color: white;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .chatbot-header h2 {
+                margin: 0;
+            }
+
+            .chatbot-header button {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .chatbot-content {
+                padding: 10px;
+                height: 200px;
+                overflow-y: auto;
+            }
+
+            .chatbot-footer {
+                display: flex;
+                border-top: 1px solid #ddd;
+            }
+
+            .chatbot-footer input {
+                flex: 1;
+                border: none;
+                padding: 10px;
+                border-radius: 0 0 0 10px;
+                outline: none;
+            }
+
+            .chatbot-footer button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 0 0 10px 0;
+                cursor: pointer;
+            }
+        </style>
+        <!-- AOS JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    </head>
+    <body>
+        <!-- 鼠标点击事件 -->
+        <div class="mt"><a href=""></a></div>
+        <!-- 鼠标点击事件 -->
+        <!-- 导航栏 -->
+        <header>
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <img src="{% static 'status3/cdz.png' %}" alt="" id="charging-station-img">
+                    <a href="##" id="daohanglandebiaoti">充电桩管理系统</a>
+                </div>
+                <ul>
+                    <a href="/index/fun1Page/">功能1 </a>
+                    <li><a href="/index/fun1Page/">功能2</a></li>
+                    <li><a href="#">功能3</a></li>
+                    <li><a href="#">功能4</a></li>
+                    <li><a href="#">功能5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 导航栏 -->
+        <main>
+            <div class="div-carousel">
+                <div class="div-carousel-items">
+                    <div class="div-carousel-img">
+                        <a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a>
+                        <div class="carousel-text">缓冲区分析</div></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                </div>
+                <div class="div-carousel-focus">
+                    <span class="active"></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                </div>
+            </div>
+        </main>
+            <!-- 内容页 -->
+            <div class="content">
+                 <div class="one">
+                    <div class="txta" data-aos="fade-right">
+                        <img src="{% static 'status3/zhuyebeijing.jpg' %}" alt="" >
+                        <br/><br/><br/><br/>
+                            <h1>规划选址</h1>
+                            <br/>
+                            <p>规划充电桩的未来分布
+                                <br/> 选择新的站点
+                                <br/> 优化现有站点
+                            </p>
+                            <div class="btna">
+                            <a href="#">了解详情</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="txta1" data-aos="fade-right">
+                        <img  src="{% static 'status3/zhuyebeijing.jpg' %}" alt="">
+                        <br/><br/><br/><br/>
+                        <h1>寻找电桩</h1>
+                        <br/>
+                        <p>寻找充电桩为您的电车补电
+                            <br/> 寻找充电桩
+                            <br/> 寻找充电桩
+                        </p>
+                        <div class="btna1">
+                        <a href="#">了解详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="txta" data-aos="fade-right">
+                        <img src="{% static 'status3/zhuyebeijing.jpg' %}" alt="">
+                        <br/><br/><br/><br/>
+                        <h1>规划选址</h1>
+                        <br />
+                        <p>规划充电桩的未来分布
+                            <br/> 选择新的站点
+                            <br/> 优化现有站点
+                        </p>
+                        <div class="btna">
+                        <a href="#">了解详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 内容页 -->
+        <!-- 底部 -->
+        <div class="footer">
+            <div class="quick-links">
+                <h3>充电桩管理</h3>
+                <ul>
+                    <li><a href="#">ChargeMap</a></li>
+                    <li><a href="#">yixiehua</a></li>
+                    <li><a href="#">Orange Unicorn</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h3>与我们联系</h3>
+                <ul>
+                    <li>客服电话: 400 061 0999</li>
+                    <li>服务时间: 7*24小时</li>
+                    <li>地址: 江苏省徐州市中国矿业大学</li>
+                </ul>
+            </div>
+            <div class="qr-codes">
+                <img src="path_to_app_qr_code_image" alt="APP QR Code">
+                <img src="path_to_mini_program_qr_code_image" alt="小程序 QR Code">
+            </div>
+            <div class="contact-info">
+
+            </div>
+        </div>
+        <script type="text/javascript" src="{% static 'status3/zhuye.js' %}" ></script>
+        <script>
+              AOS.init({
+                    duration: 1200, // 动画持续时间
+                });
+        </script>
+        <div class="chatbot-icon" id="chatbotIcon">
+            🤖
+        </div>
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <h2>Chatbot</h2>
+                <button id="closeChatbot">×</button>
+            </div>
+            <div class="chatbot-content" id="chatbotContent">
+                <p>Hello! How can I help you?</p>
+            </div>
+            <div class="chatbot-footer">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button id="sendMessage">Send</button>
+            </div>
+        </div>
+    </body>
+    <script>
+    // 下移的时候转换背景与文字颜色
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const imgElement = document.getElementById('charging-station-img');
+            if (window.scrollY > 0) {
+                navbar.classList.add('sticky');
+                imgElement.src = "{% static 'status3/充电桩.svg' %}"; // 更改为滚动后使用的图像路径
+
+            } else {
+                navbar.classList.remove('sticky');
+                imgElement.src = "{% static 'status3/cdz.png' %}"; // 更改为初始使用的图像路径
+            }
+        });
+        // 下移的时候转换背景与文字颜色
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const chatbotIcon = document.getElementById("chatbotIcon");
+            const chatbotContainer = document.getElementById("chatbotContainer");
+            const closeChatbot = document.getElementById("closeChatbot");
+            const userInput = document.getElementById("userInput");
+            const sendMessage = document.getElementById("sendMessage");
+            const chatbotContent = document.getElementById("chatbotContent");
+            chatbotIcon.addEventListener("click", function () {
+                chatbotContainer.classList.toggle("open");
+            });
+            closeChatbot.addEventListener("click", function () {
+                chatbotContainer.classList.remove("open");
+            });
+            sendMessage.addEventListener("click", function () {
+                const userText = userInput.value.trim();
+                if (userText) {
+                    // 发送请求到后端API
+                    fetch('/postMessage/', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ user_input: userText }),
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.hasOwnProperty('reply')) {
+                                const botMessage = document.createElement("p");
+                                botMessage.textContent = data.reply;
+                                botMessage.style.textAlign = "left";
+                                chatbotContent.appendChild(botMessage);
+                                chatbotContent.scrollTop = chatbotContent.scrollHeight;
+                            } else {
+                                // 返回的是直接的 JSON 数据
+                                alert('返回的是 JSON 数据: ' + JSON.stringify(data, null, 2));
+                            }
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error);
+                        });
+                    const userMessage = document.createElement("p");
+                    userMessage.textContent = userText;
+                    userMessage.style.textAlign = "right";
+                    chatbotContent.appendChild(userMessage);
+                    userInput.value = "";
+                    chatbotContent.scrollTop = chatbotContent.scrollHeight;
+                }
+            });
+            userInput.addEventListener("keydown", function (event) {
+                if (event.key === "Enter") {
+                    sendMessage.click();
+                }
+            });
+        });
+
+    </script>
+    </html>

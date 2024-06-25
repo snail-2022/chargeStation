@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+        <title>学园都市</title>
+        <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+        <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+        <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+        <script type="text/javascript">
+            window._AMapSecurityConfig = {
+              securityJsCode: "5ee8f547f429d19e45f8fdf34690cded",
+            };
+          </script>
+        <script src="https://webapi.amap.com/maps?v=2.0&key=49249ac1d0084af1a37cd960158b3d7c&&plugin=AMap.Scale,AMap.ToolBar,AMap.ControlBar,AMap.Geolocation,AMap.MapType,AMap.Weather,AMap.Driving,AMap.Walking,AMap.Transfer,AMap.Riding,AMap.PlaceSearch,AMap.AutoComplete,AMap.PlaceSearch"></script>
+        <!--如果想要添加组件。先去上面plugin里面添加一下  -->
+        <link rel="stylesheet" href="{% static 'status3/zhuye.css' %}" />
+        <link rel="stylesheet" href="{% static 'status3/zhuyegongneng.css' %}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <!-- AOS JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    </head>
+    <body>
+        <!-- 鼠标点击事件 -->
+        <div class="mt"><a href=""></a></div>
+        <!-- 鼠标点击事件 -->
+        <!-- 导航栏 -->
+        <header>
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <img src="{% static 'status3/cdz.png' %}" alt="" id="charging-station-img">
+                    <a href="##" id="daohanglandebiaoti">充电桩管理系统</a>
+                </div>
+                <ul>
+                    <li><a href="#">功能1</a></li>
+                    <li><a href="#">功能2</a></li>
+                    <li><a href="#">功能3</a></li>
+                    <li><a href="#">功能4</a></li>
+                    <li><a href="#">功能5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 导航栏 -->
+        <main>
+            <div class="div-carousel">
+                <div class="div-carousel-items">
+                    <div class="div-carousel-img">
+                        <a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a>
+                        <div class="carousel-text">缓冲区分析</div></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                    <div class="div-carousel-img"><a href="#"><img src="{% static 'status3/zhuyebeijing.jpg' %}" alt=""></a></div>
+                </div>
+                <div class="div-carousel-focus">
+                    <span class="active"></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                </div>
+            </div>
+        </main>
+            <!-- 内容页 -->
+            <div class="content">
+                 <div class="one">
+                    <div class="txta" data-aos="fade-right">
+                        <img src="{% static 'status3/zhuyebeijing.jpg' %}" alt="" >
+                        <br/><br/><br/><br/>
+                            <h1>规划选址</h1>
+                            <br/>
+                            <p>规划充电桩的未来分布
+                                <br/> 选择新的站点
+                                <br/> 优化现有站点
+                            </p>
+                            <div class="btna">
+                            <a href="#">了解详情</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="two">
+                    <div class="txta1" data-aos="fade-right">
+                        <img  src="{% static 'status3/zhuyebeijing.jpg' %}" alt="">
+                        <br/><br/><br/><br/>
+                        <h1>寻找电桩</h1>
+                        <br/>
+                        <p>寻找充电桩为您的电车补电
+                            <br/> 寻找充电桩
+                            <br/> 寻找充电桩
+                        </p>
+                        <div class="btna1">
+                        <a href="#">了解详情</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="one">
+                    <div class="txta" data-aos="fade-right">
+                        <img src="{% static 'status3/zhuyebeijing.jpg' %}" alt="">
+                        <br/><br/><br/><br/>
+                        <h1>规划选址</h1>
+                        <br />
+                        <p>规划充电桩的未来分布
+                            <br/> 选择新的站点
+                            <br/> 优化现有站点
+                        </p>
+                        <div class="btna">
+                        <a href="#">了解详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 内容页 -->
+        <!-- 底部 -->
+        <div class="footer">
+            <div class="quick-links">
+                <h3>充电桩管理</h3>
+                <ul>
+                    <li><a href="#">ChargeMap</a></li>
+                    <li><a href="#">yixiehua</a></li>
+                    <li><a href="#">Orange Unicorn</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h3>与我们联系</h3>
+                <ul>
+                    <li>客服电话: 400 061 0999</li>
+                    <li>服务时间: 7*24小时</li>
+                    <li>地址: 江苏省徐州市中国矿业大学</li>
+                </ul>
+            </div>
+            <div class="qr-codes">
+                <img src="path_to_app_qr_code_image" alt="APP QR Code">
+                <img src="path_to_mini_program_qr_code_image" alt="小程序 QR Code">
+            </div>
+            <div class="contact-info">
+
+            </div>
+        </div>
+        <script type="text/javascript" src="{% static 'status3/zhuye.js' %}" ></script>
+        <script>
+              AOS.init({
+                    duration: 1200, // 动画持续时间
+                });
+        </script>
+    </body>
+    <script>
+    // 下移的时候转换背景与文字颜色
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const imgElement = document.getElementById('charging-station-img');
+            if (window.scrollY > 0) {
+                navbar.classList.add('sticky');
+                imgElement.src = "{% static 'status3/充电桩.svg' %}"; // 更改为滚动后使用的图像路径
+
+            } else {
+                navbar.classList.remove('sticky');
+                imgElement.src = './status3/cdz.png'; // 更改为初始使用的图像路径
+            }
+        });
+        // 下移的时候转换背景与文字颜色
+    </script>
+    </html>
